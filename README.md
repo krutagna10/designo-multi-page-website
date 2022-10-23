@@ -1,4 +1,4 @@
-# Frontend Mentor - Designo Multi Page Website
+# Designo Multi Page Website
 
 ### Screenshot
 
@@ -7,4 +7,10 @@
 ### Links
 
 - Live Site URL: [https://designo-multi-page-website-10.vercel.app/]
+
+### Built with
+
+- HTML
+- CSS
+- Vanilla Javascript
 
