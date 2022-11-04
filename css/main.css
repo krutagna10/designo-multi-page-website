@@ -1068,7 +1068,10 @@ body {
 .location-container {
   padding-inline: 0 !important;
   gap: 0 !important;
-  margin-bottom: 1rem;
+}
+
+.locations-page-section > * + * {
+  margin-top: 1.25rem;
 }
 
 .location-image-container {

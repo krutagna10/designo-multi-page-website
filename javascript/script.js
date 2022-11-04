@@ -41,19 +41,19 @@ window.addEventListener("resize", function() {
 // When the user clicks on any project container
 for (const webDesignProject of webDesignProjects) {
     webDesignProject.addEventListener('click', () => {
-        window.location.href = 'web-design.html';
+        window.location.href = 'pages/web-design.html';
     });
 }
 
 for (const appDesignProject of appDesignProjects) {
     appDesignProject.addEventListener('click', () => {
-        window.location.href = 'app-design.html';
+        window.location.href = 'pages/app-design.html';
     });
 }
 
 for (const graphicDesignProject of graphicDesignProjects) {
     graphicDesignProject.addEventListener('click', () => {
-        window.location.href = 'graphic-design.html';
+        window.location.href = 'pages/graphic-design.html';
     });
 }
 
