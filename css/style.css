@@ -1162,7 +1162,7 @@ input:-webkit-autofill {
     opacity: 0.5;
 }
 
-.submit-button {
+.submit-btn {
     justify-self: center;
 }
 
@@ -1175,7 +1175,7 @@ input:-webkit-autofill {
         padding-inline: 4rem !important;
     }
 
-    .submit-button {
+    .submit-btn {
         justify-self: end;
     }
 

@@ -62,39 +62,33 @@
 
 
 /* Buttons */
-.btn-light {
+.btn {
     display: block;
     border: none;
+    padding: 0.75rem 1.5rem;
+    max-width: 10rem;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease;
+}
+
+.btn--light {
     background-color: var(--white);
-    padding: 0.75rem 1.5rem;
-    max-width: 10rem;
-    border-radius: 0.25rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
 }
 
-.btn-light:hover {
+.btn--light:hover {
     background-color: var(--light-peach);
     color: var(--white);
 }
 
-.btn-dark {
-    display: block;
-    border: none;
+.btn--dark {
     background-color: var(--peach);
-    padding: 0.75rem 1.5rem;
     color: var(--white);
-    border-radius: 0.25rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    max-width: 10rem;
 }
 
-.btn-dark:hover {
+.btn--dark:hover {
     background-color: var(--light-peach);
     color: var(--white);
 }
-
 
 /* Headings*/
 .primary-heading {
