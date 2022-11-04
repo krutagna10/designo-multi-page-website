@@ -9,7 +9,6 @@ const graphicDesignProjects = document.querySelectorAll('.graphic-design');
 // Navigation
 let openNavigationButton = document.querySelector('.mobile-navigation__open-btn');
 let closeNavigationButton = document.querySelector('.mobile-navigation__close-btn');
-console.log(openNavigationButton)
 
 openNavigationButton.addEventListener('click', () => {
     mainHeader.classList.add('navigation-open');
@@ -19,9 +18,7 @@ openNavigationButton.addEventListener('click', () => {
 closeNavigationButton.addEventListener('click', () => {
     mainHeader.classList.remove('navigation-open');
     overlay.classList.add('hidden');
-    console.log('Hello')
 })
-
 
 // Removing overlay
 const hideMobileNavigation = () => {
