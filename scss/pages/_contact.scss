@@ -1,0 +1,99 @@
+.contact-us-container {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-radius: var(--border-radius-container);
+}
+
+.input {
+  display: block;
+  background: transparent;
+  border: none;
+  color: var(--white);
+  padding: 1rem 0.75rem 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--white);
+  width: 100%;
+}
+
+.input-container {
+  position: relative;
+}
+
+.error {
+  position: absolute;
+  top: 65%;
+  right: 0;
+  transform: translateY(-65%);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.show-error .error {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.error-message {
+  font-size: 0.75rem;
+}
+
+/* Setting resize none*/
+textarea {
+  resize: none;
+}
+
+/* Removing arrows in input:number*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Changing autocomplete color*/
+input:-webkit-autofill {
+  -webkit-background-clip: text;
+}
+
+/*Change text in autofill text box*/
+input:-webkit-autofill {
+  -webkit-text-fill-color: var(--white) !important;
+}
+
+.input:focus {
+  outline: none;
+  border-bottom: 2px solid var(--white);
+}
+
+::placeholder {
+  color: var(--white);
+  opacity: 0.5;
+}
+
+.submit-btn {
+  justify-self: center;
+}
+
+.contact-us-container .text-content {
+  text-align: center;
+}
+
+@media (min-width: 35em) {
+  .contact-us-container {
+    padding-inline: 4rem !important;
+  }
+
+  .submit-btn {
+    justify-self: end;
+  }
+
+  .contact-us-container .text-content {
+    text-align: left;
+  }
+}
+
+@media (min-width: 45em) {
+  .contact-us-container .text-content {
+    padding-right: 4rem;
+  }
+}

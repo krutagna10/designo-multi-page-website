@@ -1,0 +1,126 @@
+.project-type {
+  min-height: 15rem;
+  border-radius: 0.75rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center
+}
+
+.project-type::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: hsl(var(--rawBlack), 0.45);
+  transition: all 0.4s ease;
+}
+
+.project-type:hover::before {
+  background-color: hsl(var(--rawPeach), 0.5);
+}
+
+.secondary-heading,
+.view-projects-link {
+  position: relative;
+  z-index: 999;
+}
+
+.link-symbol {
+  color: var(--peach);
+  margin-left: 0.5rem;
+}
+
+.project-type.web-design {
+  background-image: url('../images/home/mobile/image-web-design.jpg');
+}
+
+.project-type.app-design {
+  background-image: url('../images/home/mobile/image-app-design.jpg');
+}
+
+.project-type.graphic-design {
+  background-image: url('../images/home/mobile/image-graphic-design.jpg');
+}
+
+@media (min-width: 35em) {
+  .project-type.web-design {
+    background-image: url('../images/home/tablet/image-web-design.jpg');
+  }
+
+  .project-type.app-design {
+    background-image: url('../images/home/tablet/image-app-design.jpg');
+  }
+
+  .project-type.graphic-design {
+    background-image: url('../images/home/tablet/image-graphic-design.jpg');
+  }
+}
+
+@media (min-width: 45em) {
+  .project-type {
+    min-height: 20rem;
+  }
+
+  .project-type.web-design {
+    background-image: url('../images/home/desktop/image-web-design-large.jpg');
+    grid-row: span 2;
+  }
+
+  .project-type.app-design {
+    background-image: url('../images/home/desktop/image-app-design.jpg');
+  }
+
+  .project-type.graphic-design {
+    background-image: url('../images/home/desktop/image-graphic-design.jpg');
+  }
+}
+
+
+/* Advantages Section */
+.advantages-text {
+  text-align: center;
+}
+
+.advantage {
+  gap: 1.25rem;
+}
+
+.advantage-image-container {
+  position: relative;
+}
+
+.advantage-image-container > img {
+  margin: 0 auto;
+}
+
+.advantage-image-container::before {
+  content: '';
+  position: absolute;
+  background-image: url('../images/shared/desktop/bg-pattern-small-circle.svg');
+  inset: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 35em) {
+  .advantage {
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+}
+
+@media (min-width: 45em) {
+  .advantage {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 55em) {
+  .advantage-container {
+    gap: 3rem !important;
+  }
+}
