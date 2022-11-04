@@ -19,15 +19,15 @@
 }
 
 .hero-section .about-us-image-container {
-  background-image: url('../images/about/mobile/image-about-hero.jpg');
+  background-image: url('../../images/about/mobile/image-about-hero.jpg');
 }
 
 .talent-section .about-us-image-container {
-  background-image: url('../images/about/mobile/image-world-class-talent.jpg');
+  background-image: url('../../images/about/mobile/image-world-class-talent.jpg');
 }
 
 .deal-section .about-us-image-container {
-  background-image: url('../images/about/mobile/image-real-deal.jpg');
+  background-image: url('../../images/about/mobile/image-real-deal.jpg');
 }
 
 /* Location grid*/
@@ -42,7 +42,7 @@
 .location .image-container::before {
   content: '';
   position: absolute;
-  background-image: url('../images/shared/desktop/bg-pattern-small-circle.svg');
+  background-image: url('../../images/shared/desktop/bg-pattern-small-circle.svg');
   inset: 0;
   /*transform: translate(-50%, -50%);*/
 }
@@ -55,15 +55,15 @@
 
 @media (min-width: 35em) {
   .hero-section .about-us-image-container {
-    background-image: url('../images/about/tablet/image-about-hero.jpg');
+    background-image: url('../../images/about/tablet/image-about-hero.jpg');
   }
 
   .talent-section .about-us-image-container {
-    background-image: url('../images/about/tablet/image-world-class-talent.jpg');
+    background-image: url('../../images/about/tablet/image-world-class-talent.jpg');
   }
 
   .deal-section .about-us-image-container {
-    background-image: url('../images/about/tablet/image-real-deal.jpg');
+    background-image: url('../../images/about/tablet/image-real-deal.jpg');
   }
 
 }
@@ -76,16 +76,16 @@
 
   .hero-section .about-us-image-container {
     min-height: 30rem;
-    background-image: url('../images/about/desktop/image-about-hero.jpg');
+    background-image: url('../../images/about/desktop/image-about-hero.jpg');
     grid-column-start: 2;
   }
 
   .talent-section .about-us-image-container {
-    background-image: url('../images/about/desktop/image-world-class-talent.jpg');
+    background-image: url('../../images/about/desktop/image-world-class-talent.jpg');
   }
 
   .deal-section .about-us-image-container {
-    background-image: url('../images/about/desktop/image-real-deal.jpg');
+    background-image: url('../../images/about/desktop/image-real-deal.jpg');
   }
 
   .talent-section .about-us-container {

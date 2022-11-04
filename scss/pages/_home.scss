@@ -34,28 +34,28 @@
 }
 
 .project-type.web-design {
-  background-image: url('../images/home/mobile/image-web-design.jpg');
+  background-image: url('../../images/home/mobile/image-web-design.jpg');
 }
 
 .project-type.app-design {
-  background-image: url('../images/home/mobile/image-app-design.jpg');
+  background-image: url('../../images/home/mobile/image-app-design.jpg');
 }
 
 .project-type.graphic-design {
-  background-image: url('../images/home/mobile/image-graphic-design.jpg');
+  background-image: url('../../images/home/mobile/image-graphic-design.jpg');
 }
 
 @media (min-width: 35em) {
   .project-type.web-design {
-    background-image: url('../images/home/tablet/image-web-design.jpg');
+    background-image: url('../../images/home/tablet/image-web-design.jpg');
   }
 
   .project-type.app-design {
-    background-image: url('../images/home/tablet/image-app-design.jpg');
+    background-image: url('../../images/home/tablet/image-app-design.jpg');
   }
 
   .project-type.graphic-design {
-    background-image: url('../images/home/tablet/image-graphic-design.jpg');
+    background-image: url('../../images/home/tablet/image-graphic-design.jpg');
   }
 }
 
@@ -65,16 +65,16 @@
   }
 
   .project-type.web-design {
-    background-image: url('../images/home/desktop/image-web-design-large.jpg');
+    background-image: url('../../images/home/desktop/image-web-design-large.jpg');
     grid-row: span 2;
   }
 
   .project-type.app-design {
-    background-image: url('../images/home/desktop/image-app-design.jpg');
+    background-image: url('../../images/home/desktop/image-app-design.jpg');
   }
 
   .project-type.graphic-design {
-    background-image: url('../images/home/desktop/image-graphic-design.jpg');
+    background-image: url('../../images/home/desktop/image-graphic-design.jpg');
   }
 }
 
@@ -99,7 +99,7 @@
 .advantage-image-container::before {
   content: '';
   position: absolute;
-  background-image: url('../images/shared/desktop/bg-pattern-small-circle.svg');
+  background-image: url('../../images/shared/desktop/bg-pattern-small-circle.svg');
   inset: 0;
   background-position: center;
   background-repeat: no-repeat;
