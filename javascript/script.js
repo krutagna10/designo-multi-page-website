@@ -1,25 +1,32 @@
 'use strict';
 
-const mainHeader = document.querySelector('.main-header')
+const mainHeader = document.querySelector('.header-section')
 const overlay = document.querySelector('.overlay');
 const webDesignProjects = document.querySelectorAll('.web-design');
 const appDesignProjects = document.querySelectorAll('.app-design');
 const graphicDesignProjects = document.querySelectorAll('.graphic-design');
 
 // Navigation
-let mobileNavigationButton = document.querySelector('.mobile-navigation-button');
+let openNavigationButton = document.querySelector('.mobile-navigation__open-btn');
+let closeNavigationButton = document.querySelector('.mobile-navigation__close-btn');
+console.log(openNavigationButton)
 
-mobileNavigationButton.addEventListener('click', () => {
-    mainHeader.classList.toggle('navigation-open');
-    mobileNavigationButton.classList.toggle('active');
-    overlay.classList.toggle('hidden');
-});
+openNavigationButton.addEventListener('click', () => {
+    mainHeader.classList.add('navigation-open');
+    overlay.classList.remove('hidden');
+})
+
+closeNavigationButton.addEventListener('click', () => {
+    mainHeader.classList.remove('navigation-open');
+    overlay.classList.add('hidden');
+    console.log('Hello')
+})
+
 
 // Removing overlay
 const hideMobileNavigation = () => {
     overlay.classList.add('hidden');
     mainHeader.classList.remove('navigation-open');
-    mobileNavigationButton.classList.remove('active')
 }
 
 // When the user click on escape key
