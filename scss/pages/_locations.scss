@@ -36,6 +36,10 @@
     grid-row-start: 1;
   }
 
+  &__contact-link {
+    display: block;
+  }
+
   @media (min-width: 35em) {
     & {
       gap: 1.25rem !important;
