@@ -727,23 +727,18 @@ body {
 }
 
 /* Advantages Section */
-.advantages-text {
-  text-align: center;
+@media (min-width: 55em) {
+  .advantages-section .container {
+    gap: 3rem !important;
+  }
 }
-
 .advantage {
   gap: 1.25rem;
 }
-
-.advantage-image-container {
+.advantage__image-wrapper {
   position: relative;
 }
-
-.advantage-image-container > img {
-  margin: 0 auto;
-}
-
-.advantage-image-container::before {
+.advantage__image-wrapper::before {
   content: "";
   position: absolute;
   background-image: url("../../images/shared/desktop/bg-pattern-small-circle.svg");
@@ -751,7 +746,9 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
-
+.advantage__image {
+  margin: 0 auto;
+}
 @media (min-width: 35em) {
   .advantage {
     grid-template-columns: 1fr 1fr;
@@ -764,11 +761,7 @@ body {
     grid-template-columns: 1fr;
   }
 }
-@media (min-width: 55em) {
-  .advantage-container {
-    gap: 3rem !important;
-  }
-}
+
 .project-container {
   min-height: 18rem;
   gap: 3rem;
