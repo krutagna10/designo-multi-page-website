@@ -1,67 +1,62 @@
-.project-container {
+.hero-design {
   min-height: 18rem;
   gap: 3rem;
   border-radius: var(--border-radius-container);
-}
 
-
-@media (min-width: 45em) {
-  .text-box-projects {
-    width: 50%;
+  @media (min-width: 45em) {
+    &__text-content {
+      width: 50%;
+    }
   }
 }
 
-.project {
+.card {
   border-radius: 0.75rem;
-  overflow: hidden;
   transition: all 0.3s ease;
   cursor: pointer;
-}
 
-.websites-section .image-container {
-  overflow: hidden;
-}
-
-.project-picture {
-  transition: all 0.4s ease;
-}
-
-.project:hover {
-  background-color: var(--peach) !important;
-}
-
-.project:hover .tertiary-heading {
-  color: var(--white);
-}
-
-.project:hover .text {
-  color: var(--white);
-}
-
-.project:hover .project-picture {
-  transform: scale(1.03);
-}
-
-.project-text-box {
-  padding: 2.125rem;
-}
-
-@media (min-width: 30em) {
-  .project {
-    display: flex;
-    align-items: center;
+  &__image-wrapper {
+    overflow: hidden;
   }
-}
 
-@media (min-width: 45em) {
-  .project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  &:hover {
+    background-color: var(--peach) !important;
   }
+
+  &:hover &__image {
+    transform: scale(1.03);
+  }
+
+  &:hover &__heading {
+    color: var(--white);
+  }
+
+  &:hover &__text {
+    color: var(--white);
+  }
+
+  &__image {
+    transition: all 0.4s ease;
+  }
+
+  &__text-content {
+    padding: 2.125rem;
+  }
+
+  @media (min-width: 30em) {
+    & {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  @media (min-width: 45em) {
+    & {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
 }
 
-.app-design-page .web-design,
-.graphic-design-page .web-design {
-  grid-row: span 1;
-}

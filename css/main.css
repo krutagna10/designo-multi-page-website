@@ -694,7 +694,7 @@ body {
   .service {
     min-height: 20rem;
   }
-  .service.web-design {
+  .home .service.web-design {
     background-image: url("../../images/home/desktop/image-web-design-large.jpg");
     grid-row: span 2;
   }
@@ -742,68 +742,55 @@ body {
   }
 }
 
-.project-container {
+.hero-design {
   min-height: 18rem;
   gap: 3rem;
   border-radius: var(--border-radius-container);
 }
-
 @media (min-width: 45em) {
-  .text-box-projects {
+  .hero-design__text-content {
     width: 50%;
   }
 }
-.project {
+
+.card {
   border-radius: 0.75rem;
-  overflow: hidden;
   transition: all 0.3s ease;
   cursor: pointer;
 }
-
-.websites-section .image-container {
+.card__image-wrapper {
   overflow: hidden;
 }
-
-.project-picture {
-  transition: all 0.4s ease;
-}
-
-.project:hover {
+.card:hover {
   background-color: var(--peach) !important;
 }
-
-.project:hover .tertiary-heading {
-  color: var(--white);
-}
-
-.project:hover .text {
-  color: var(--white);
-}
-
-.project:hover .project-picture {
+.card:hover .card__image {
   transform: scale(1.03);
 }
-
-.project-text-box {
+.card:hover .card__heading {
+  color: var(--white);
+}
+.card:hover .card__text {
+  color: var(--white);
+}
+.card__image {
+  transition: all 0.4s ease;
+}
+.card__text-content {
   padding: 2.125rem;
 }
-
 @media (min-width: 30em) {
-  .project {
+  .card {
     display: flex;
     align-items: center;
   }
 }
 @media (min-width: 45em) {
-  .project {
+  .card {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-}
-.app-design-page .web-design,
-.graphic-design-page .web-design {
-  grid-row: span 1;
 }
 
 .about-us-container {

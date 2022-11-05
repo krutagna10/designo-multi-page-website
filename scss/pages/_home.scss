@@ -62,7 +62,7 @@
     & {
       min-height: 20rem;
     }
-    &.web-design {
+    .home &.web-design {
       background-image: url('../../images/home/desktop/image-web-design-large.jpg');
       grid-row: span 2;
     }
