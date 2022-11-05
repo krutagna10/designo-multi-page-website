@@ -661,7 +661,7 @@ body {
   color: var(--white);
 }
 
-.project-type {
+.service {
   min-height: 15rem;
   border-radius: 0.75rem;
   background-position: center;
@@ -672,68 +672,60 @@ body {
   overflow: hidden;
   text-align: center;
 }
-
-.project-type::before {
+.service::before {
   content: "";
   position: absolute;
   inset: 0;
   background-color: hsl(var(--rawBlack), 0.45);
   transition: all 0.4s ease;
 }
-
-.project-type:hover::before {
+.service:hover::before {
   background-color: hsl(var(--rawPeach), 0.5);
 }
-
-.secondary-heading,
-.view-projects-link {
+.service__heading, .service__link {
   position: relative;
   z-index: 999;
 }
-
-.link-symbol {
+.service__link-symbol {
   color: var(--peach);
   margin-left: 0.5rem;
 }
-
-.project-type.web-design {
+.service.web-design {
   background-image: url("../../images/home/mobile/image-web-design.jpg");
 }
-
-.project-type.app-design {
+.service.app-design {
   background-image: url("../../images/home/mobile/image-app-design.jpg");
 }
-
-.project-type.graphic-design {
+.service.graphic-design {
   background-image: url("../../images/home/mobile/image-graphic-design.jpg");
 }
-
 @media (min-width: 35em) {
-  .project-type.web-design {
+  .service.web-design {
     background-image: url("../../images/home/tablet/image-web-design.jpg");
   }
-  .project-type.app-design {
+  .service.app-design {
     background-image: url("../../images/home/tablet/image-app-design.jpg");
   }
-  .project-type.graphic-design {
+  .service.graphic-design {
     background-image: url("../../images/home/tablet/image-graphic-design.jpg");
   }
 }
 @media (min-width: 45em) {
-  .project-type {
+  .service {
     min-height: 20rem;
   }
-  .project-type.web-design {
+  .service.web-design {
     background-image: url("../../images/home/desktop/image-web-design-large.jpg");
     grid-row: span 2;
   }
-  .project-type.app-design {
+  .service.app-design {
     background-image: url("../../images/home/desktop/image-app-design.jpg");
   }
-  .project-type.graphic-design {
+  .service.graphic-design {
     background-image: url("../../images/home/desktop/image-graphic-design.jpg");
   }
 }
+
 /* Advantages Section */
 .advantages-text {
   text-align: center;
