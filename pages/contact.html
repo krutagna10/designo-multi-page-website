@@ -16,7 +16,7 @@
 </head>
 <body>
 <header class="header-section">
-    <div class="container header-container flex flex-justify-space-between flex-align-items-center">
+    <div class="container header-container flex flex-justify-space-between flex-align-center">
         <a href="../index.html" class="header__logo-wrapper">
             <img src="../images/shared/desktop/logo-dark.png" class="header__logo" alt="Designo logo">
         </a>
@@ -41,7 +41,7 @@
 <section class="hero-section">
     <div class="container grid grid--2-columns  contact-us-container background-peach">
 
-        <div class="text-content flow flex flex-direction-column flex-justify-content-center">
+        <div class="text-content flow flex flex-column flex-justify-center">
             <h1 class="primary-heading text-color-white">
                 Contact us
             </h1>
@@ -106,51 +106,48 @@
 </section>
 
 <section class="locations-section section-padding">
-
-    <div class="container location-demo-container grid">
-
-        <div class="location flex flex-direction-column flex-align-items-center">
-            <div class="image-container">
-                <img src="../images/shared/desktop/illustration-canada.svg" alt="Canada illustration">
+    <div class="container locations grid">
+        <div class="locations__item flex flex-column flex-align-center">
+            <div class="locations__image-wrapper">
+                <img src="../images/shared/desktop/illustration-canada.svg" class="locations__image" alt="Canada illustration">
             </div>
-            <div class="text-box grid grid-place-center text-align-center">
-                <h3 class="tertiary-heading text-color-dark-grey uppercase letter-spacing-2">
+            <div class="locations__text-content grid grid-place-center text-align-center">
+                <h3 class="locations__heading tertiary-heading text-color-dark-grey uppercase letter-spacing-2">
                     Canada
                 </h3>
-                <a href="locations.html" class="btn btn--dark see-location-button uppercase text-decoration-none">
+                <a href="locations.html" class="btn btn--dark locations__btn uppercase text-decoration-none">
                     See Location
                 </a>
             </div>
         </div>
 
-        <div class="location flex flex-direction-column flex-align-items-center">
-            <div class="image-container">
-                <img src="../images/shared/desktop/illustration-australia.svg" alt="Australia illustration">
+        <div class="locations__item flex flex-column flex-align-center">
+            <div class="locations__image-wrapper">
+                <img src="../images/shared/desktop/illustration-australia.svg" class="locations__image" alt="Australia illustration">
             </div>
-            <div class="text-box grid grid-place-center text-align-center">
-                <h3 class="tertiary-heading text-color-dark-grey uppercase letter-spacing-2">
+            <div class="locations__text-content grid grid-place-center text-align-center">
+                <h3 class="locations__heading tertiary-heading text-color-dark-grey uppercase letter-spacing-2">
                     Australia
                 </h3>
-                <a href="locations.html" class="btn btn--dark see-location-button uppercase text-decoration-none">
+                <a href="locations.html" class="btn btn--dark locations__btn uppercase text-decoration-none">
                     See Location
                 </a>
             </div>
         </div>
 
-        <div class="location flex flex-direction-column flex-align-items-center">
-            <div class="image-container">
-                <img src="../images/shared/desktop/illustration-united-kingdom.svg" alt="United Kingdom illustration">
+        <div class="locations__item flex flex-column flex-align-center">
+            <div class="locations__image-wrapper">
+                <img src="../images/shared/desktop/illustration-united-kingdom.svg" class="locations__image" alt="United Kingdom illustration">
             </div>
-            <div class="text-box grid grid-place-center text-align-center">
+            <div class="locations__heading locations__text-content grid grid-place-center text-align-center">
                 <h3 class="tertiary-heading text-color-dark-grey uppercase letter-spacing-2">
                     United Kingdom
                 </h3>
-                <a href="locations.html" class="btn btn--dark see-location-button uppercase text-decoration-none">
+                <a href="locations.html" class="btn btn--dark locations__btn uppercase text-decoration-none">
                     See Location
                 </a>
             </div>
         </div>
-
     </div>
 </section>
 
@@ -176,12 +173,12 @@
 
     <div class="container footer">
         <div class="footer__logo-wrapper">
-            <a class="footer__logo-link flex flex-align-items-center flex-justify-content-center" href="#">
+            <a class="footer__logo-link flex flex-align-center flex-justify-center" href="#">
                 <img src="../images/shared/desktop/logo-light.png" class="footer__logo" alt="Logo light">
             </a>
         </div>
         <nav class="footer__nav">
-            <ul class="footer__nav-list list-style-none flex flex-direction-column flex-gap">
+            <ul class="footer__nav-list list-style-none flex flex-column flex-gap">
                 <li><a href="../pages/about.html" class="footer__nav-link text-color-white text-decoration-none uppercase letter-spacing-1">Our
                     company</a></li>
                 <li><a href="../pages/locations.html" class="footer__nav-link text-color-white text-decoration-none uppercase letter-spacing-1">Locations</a>

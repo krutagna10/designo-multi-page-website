@@ -17,7 +17,7 @@
 <body>
 
 <header class="header-section">
-    <div class="container header-container flex flex-justify-space-between flex-align-items-center">
+    <div class="container header-container flex flex-justify-space-between flex-align-center">
         <a href="../index.html" class="header__logo-wrapper">
             <img src="../images/shared/desktop/logo-dark.png" class="header__logo" alt="Designo logo">
         </a>
@@ -39,18 +39,18 @@
     </div>
 </header>
 
-<section class="locations-page-section hero-section flow">
-    <div class="container location-container canada-location-container grid">
-        <div class="text-content background-very-light-peach flow flex flex-direction-column flex-justify-content-center">
-            <h2 class="secondary-heading text-color-peach">Canada</h2>
-            <div class="contact-box grid">
-                <div class="address">
-                    <p class="main-address font-size-100 text-color-dark-grey text-bold">Designo Central Office</p>
-                    <p class="sub-address font-size-100 text-color-dark-grey">3886 Wellington Street</p>
-                    <p class="sub-address font-size-100 text-color-dark-grey">Toronto, Ontario M9C 3J5</p>
+<section class="location-section hero-section">
+    <div class="location location--canada container grid">
+        <div class="location__text-content background-very-light-peach flow flex flex-column flex-justify-center">
+            <h2 class="location__heading secondary-heading text-color-peach">Canada</h2>
+            <div class="location__contact-wrapper grid">
+                <div class="location__address-wrapper">
+                    <p class="location__address font-size-100 text-color-dark-grey text-bold">Designo Central Office</p>
+                    <p class="location__address font-size-100 text-color-dark-grey">3886 Wellington Street</p>
+                    <p class="location__address font-size-100 text-color-dark-grey">Toronto, Ontario M9C 3J5</p>
                 </div>
 
-                <div class="contact-us-box">
+                <div class="location__contact-box">
                     <p class="contact-us-heading font-size-100 text-color-dark-grey text-bold">Contact</p>
                     <a class="footer__contact-link font-size-100 text-color-dark-grey text-decoration-none"
                        href="tel: +1 253-863-8967">P : +1
@@ -61,21 +61,21 @@
                 </div>
             </div>
         </div>
-        <div class="image-container location-image-container"></div>
+        <div class="location__image-wrapper"></div>
     </div>
 
-    <div class="container location-container australia-location-container grid">
-        <div class="image-container location-image-container"></div>
-        <div class="text-content background-very-light-peach flow flex flex-direction-column flex-justify-content-center">
-            <h2 class="secondary-heading text-color-peach">Australia</h2>
-            <div class="contact-box grid">
-                <div class="address">
-                    <p class="main-address font-size-100 text-color-dark-grey text-bold">Designo AU Office</p>
-                    <p class="sub-address font-size-100 text-color-dark-grey">19 Balonne Street</p>
-                    <p class="sub-address font-size-100 text-color-dark-grey">New South Wales 2443</p>
+    <div class="location location--australia container grid">
+        <div class="location__image-wrapper"></div>
+        <div class="location__text-content background-very-light-peach flow flex flex-column flex-justify-center">
+            <h2 class="location__heading secondary-heading text-color-peach">Australia</h2>
+            <div class="location__contact-wrapper grid">
+                <div class="location__address-wrapper">
+                    <p class="location__address font-size-100 text-color-dark-grey text-bold">Designo AU Office</p>
+                    <p class="location__address font-size-100 text-color-dark-grey">19 Balonne Street</p>
+                    <p class="location__address font-size-100 text-color-dark-grey">New South Wales 2443</p>
                 </div>
 
-                <div class="contact-us-box">
+                <div class="location__contact-box">
                     <p class="contact-us-heading font-size-100 text-color-dark-grey text-bold">Contact</p>
                     <a class="footer__contact-link font-size-100 text-color-dark-grey text-decoration-none"
                        href="tel:(02) 6720 9092">P : (02) 6720 9092</a>
@@ -86,17 +86,17 @@
         </div>
     </div>
 
-    <div class="container location-container united-kingdom-location-container grid ">
-        <div class="text-content background-very-light-peach flow flex flex-direction-column flex-justify-content-center">
-            <h2 class="secondary-heading text-color-peach">United Kingdom</h2>
-            <div class="contact-box grid">
-                <div class="address">
-                    <p class="main-address font-size-100 text-color-dark-grey text-bold">Designo UK Office</p>
-                    <p class="sub-address font-size-100 text-color-dark-grey">13  Colorado Way</p>
-                    <p class="sub-address font-size-100 text-color-dark-grey">Rhyd-y-fro SA8 9GA</p>
+    <div class="location location--uk container grid">
+        <div class="location__text-content background-very-light-peach flow flex flex-column flex-justify-center">
+            <h2 class="location__heading secondary-heading text-color-peach">United Kingdom</h2>
+            <div class="location__contact-wrapper grid">
+                <div class="location__address-wrapper">
+                    <p class="location__address font-size-100 text-color-dark-grey text-bold">Designo UK Office</p>
+                    <p class="location__address font-size-100 text-color-dark-grey">13  Colorado Way</p>
+                    <p class="location__address font-size-100 text-color-dark-grey">Rhyd-y-fro SA8 9GA</p>
                 </div>
 
-                <div class="contact-us-box">
+                <div class="location__contact-box">
                     <p class="contact-us-heading font-size-100 text-color-dark-grey text-bold">Contact </p>
                     <a class="footer__contact-link font-size-100 text-color-dark-grey text-decoration-none"
                        href="tel: 078 3115 1400">P : 078 3115 1400</a>
@@ -105,7 +105,7 @@
                 </div>
             </div>
         </div>
-        <div class="image-container location-image-container"></div>
+        <div class="location__image-wrapper"></div>
     </div>
 
 </section>
@@ -132,12 +132,12 @@
 
     <div class="container footer">
         <div class="footer__logo-wrapper">
-            <a class="footer__logo-link flex flex-align-items-center flex-justify-content-center" href="#">
+            <a class="footer__logo-link flex flex-align-center flex-justify-center" href="#">
                 <img src="../images/shared/desktop/logo-light.png" class="footer__logo" alt="Logo light">
             </a>
         </div>
         <nav class="footer__nav">
-            <ul class="footer__nav-list list-style-none flex flex-direction-column flex-gap">
+            <ul class="footer__nav-list list-style-none flex flex-column flex-gap">
                 <li><a href="../pages/about.html" class="footer__nav-link text-color-white text-decoration-none uppercase letter-spacing-1">Our
                     company</a></li>
                 <li><a href="../pages/locations.html" class="footer__nav-link text-color-white text-decoration-none uppercase letter-spacing-1">Locations</a>

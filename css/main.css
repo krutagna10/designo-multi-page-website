@@ -255,15 +255,15 @@ body {
   justify-content: space-between;
 }
 
-.flex-justify-content-center {
+.flex-justify-center {
   justify-content: center;
 }
 
-.flex-align-items-center {
+.flex-align-center {
   align-items: center;
 }
 
-.flex-direction-column {
+.flex-column {
   flex-direction: column;
 }
 
@@ -871,126 +871,118 @@ body {
     grid-row-start: 1;
   }
 }
-
-@media (min-width: 65em) {
-  .location-demo-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
 @media (min-width: 65em) {
   .about__text-content {
     padding-inline: 4rem;
   }
 }
+
 /* Location grid*/
-.location .text-box {
+.locations__text-content {
   padding: 2rem 2rem;
 }
-
-.location .image-container {
+.locations__image-wrapper {
   position: relative;
 }
-
-.location .image-container::before {
+.locations__image-wrapper::before {
   content: "";
   position: absolute;
   background-image: url("../../images/shared/desktop/bg-pattern-small-circle.svg");
   inset: 0;
 }
-
-.see-location-button {
+.locations__btn {
   align-self: center;
   margin-top: 1rem;
 }
-
-.location-container {
-  padding-inline: 0 !important;
-  gap: 0 !important;
+@media (min-width: 65em) {
+  .locations {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-.locations-page-section > * + * {
+.location-section > * + * {
   margin-top: 1.25rem;
 }
 
-.location-image-container {
-  min-height: 20rem;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  cursor: pointer;
+.location {
+  padding-inline: 0 !important;
+  gap: 0 !important;
 }
-
-.canada-location-container .location-image-container {
-  background-image: url("../../images/locations/desktop/image-map-canada.png");
-  grid-row-start: 1;
-}
-
-.australia-location-container .location-image-container {
-  background-image: url("../../images/locations/desktop/image-map-australia.png");
-}
-
-.united-kingdom-location-container .location-image-container {
-  background-image: url("../../images/locations/desktop/image-map-united-kingdom.png");
-  grid-row-start: 1;
-}
-
-.location-container .text-content {
+.location__text-content {
   padding: 3rem 0;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
+.location__image-wrapper {
+  min-height: 20rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.location--canada .location__image-wrapper {
+  background-image: url("../../images/locations/desktop/image-map-canada.png");
+  grid-row-start: 1;
+}
+.location--australia .location__image-wrapper {
+  background-image: url("../../images/locations/desktop/image-map-australia.png");
+}
+.location--uk .location__image-wrapper {
+  background-image: url("../../images/locations/desktop/image-map-united-kingdom.png");
+  grid-row-start: 1;
+}
 @media (min-width: 35em) {
-  .location-container {
+  .location {
     gap: 1.25rem !important;
     padding-inline: 1rem !important;
   }
-  .location-container .secondary-heading {
+  .location__heading {
     grid-column: span 2;
   }
-  .location-container .text-content {
+  .location__text-content {
     text-align: left;
     border-radius: 0.75rem;
     padding-inline: 2rem;
   }
-  .contact-box {
+  .location__contact-wrapper {
     grid-template-columns: 1fr 1fr;
   }
-  .canada-location-container .location-image-container {
+  .location--canada .location__image-wrapper {
     background-image: url("../../images/locations/tablet/image-map-canada.png");
-    border-radius: 0.75rem;
+    grid-row-start: 1;
   }
-  .australia-location-container .location-image-container {
+  .location--australia .location__image-wrapper {
     background-image: url("../../images/locations/tablet/image-map-australia.png");
-    border-radius: 0.75rem;
   }
-  .united-kingdom-location-container .location-image-container {
+  .location--uk .location__image-wrapper {
     background-image: url("../../images/locations/tablet/image-map-uk.png");
-    border-radius: 0.75rem;
+    grid-row-start: 1;
   }
 }
 @media (min-width: 45em) {
-  .canada-location-container.location-container,
-.united-kingdom-location-container .location-container {
+  .location--canada, .location--uk {
     grid-template-columns: 70fr 30fr;
   }
-  .australia-location-container.location-container {
+  .location--australia {
     grid-template-columns: 30fr 70fr;
   }
-  .canada-location-container .location-image-container,
-.united-kingdom-location-container .location-image-container {
+  .location__image-wrapper {
+    border-radius: 0.75rem;
+  }
+  .location--canada .location__image-wrapper, .location--uk .location__image-wrapper {
     grid-column-start: 2;
   }
 }
 @media (min-width: 65em) {
-  .location-container .text-content {
+  .location__text-content {
     text-align: left;
     border-radius: 0.75rem;
     padding-inline: 4rem;
   }
 }
+
 .contact-us-container {
   padding-top: 3rem;
   padding-bottom: 3rem;
