@@ -7,8 +7,8 @@ const appDesignProjects = document.querySelectorAll('.app-design');
 const graphicDesignProjects = document.querySelectorAll('.graphic-design');
 
 // Navigation
-let openNavigationButton = document.querySelector('.mobile-navigation__open-btn');
-let closeNavigationButton = document.querySelector('.mobile-navigation__close-btn');
+let openNavigationButton = document.querySelector('.header__nav-open-btn');
+let closeNavigationButton = document.querySelector('.header__nav-close-btn');
 
 openNavigationButton.addEventListener('click', () => {
     mainHeader.classList.add('navigation-open');
