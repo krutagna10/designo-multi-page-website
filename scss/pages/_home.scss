@@ -33,28 +33,28 @@
   }
 
   &--web-design {
-    background-image: url('../../images/home/mobile/image-web-design.jpg');
+    background-image: url('/images/home/mobile/image-web-design.jpg');
   }
 
   &--app-design {
-    background-image: url('../../images/home/mobile/image-app-design.jpg');
+    background-image: url('/images/home/mobile/image-app-design.jpg');
   }
 
   &--graphic-design {
-    background-image: url('../../images/home/mobile/image-graphic-design.jpg');
+    background-image: url('/images/home/mobile/image-graphic-design.jpg');
   }
 
   @media (min-width: 35em) {
     &--web-design {
-      background-image: url('../../images/home/tablet/image-web-design.jpg')
+      background-image: url('/images/home/tablet/image-web-design.jpg')
     }
 
     &--app-design {
-      background-image: url('../../images/home/tablet/image-app-design.jpg');
+      background-image: url('/images/home/tablet/image-app-design.jpg');
     }
 
     &--graphic-design {
-      background-image: url('../../images/home/tablet/image-graphic-design.jpg');
+      background-image: url('/images/home/tablet/image-graphic-design.jpg');
     }
   }
 
@@ -63,16 +63,16 @@
       min-height: 20rem;
     }
     .home &--web-design {
-      background-image: url('../../images/home/desktop/image-web-design-large.jpg');
+      background-image: url('/images/home/desktop/image-web-design-large.jpg');
       grid-row: span 2;
     }
 
     &--app-design {
-      background-image: url('../../images/home/desktop/image-app-design.jpg');
+      background-image: url('/images/home/desktop/image-app-design.jpg');
     }
 
     &--graphic-design {
-      background-image: url('../../images/home/desktop/image-graphic-design.jpg');
+      background-image: url('/images/home/desktop/image-graphic-design.jpg');
     }
   }
 }
@@ -94,7 +94,7 @@
   &__image-wrapper::before {
     content: '';
     position: absolute;
-    background-image: url('../../images/shared/desktop/bg-pattern-small-circle.svg');
+    background-image: url('/images/shared/desktop/bg-pattern-small-circle.svg');
     inset: 0;
     background-position: center;
     background-repeat: no-repeat;

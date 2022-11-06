@@ -686,23 +686,23 @@ input:-webkit-autofill {
   margin-left: 0.5rem;
 }
 .service--web-design {
-  background-image: url("../../images/home/mobile/image-web-design.jpg");
+  background-image: url("/images/home/mobile/image-web-design.jpg");
 }
 .service--app-design {
-  background-image: url("../../images/home/mobile/image-app-design.jpg");
+  background-image: url("/images/home/mobile/image-app-design.jpg");
 }
 .service--graphic-design {
-  background-image: url("../../images/home/mobile/image-graphic-design.jpg");
+  background-image: url("/images/home/mobile/image-graphic-design.jpg");
 }
 @media (min-width: 35em) {
   .service--web-design {
-    background-image: url("../../images/home/tablet/image-web-design.jpg");
+    background-image: url("/images/home/tablet/image-web-design.jpg");
   }
   .service--app-design {
-    background-image: url("../../images/home/tablet/image-app-design.jpg");
+    background-image: url("/images/home/tablet/image-app-design.jpg");
   }
   .service--graphic-design {
-    background-image: url("../../images/home/tablet/image-graphic-design.jpg");
+    background-image: url("/images/home/tablet/image-graphic-design.jpg");
   }
 }
 @media (min-width: 45em) {
@@ -710,14 +710,14 @@ input:-webkit-autofill {
     min-height: 20rem;
   }
   .home .service--web-design {
-    background-image: url("../../images/home/desktop/image-web-design-large.jpg");
+    background-image: url("/images/home/desktop/image-web-design-large.jpg");
     grid-row: span 2;
   }
   .service--app-design {
-    background-image: url("../../images/home/desktop/image-app-design.jpg");
+    background-image: url("/images/home/desktop/image-app-design.jpg");
   }
   .service--graphic-design {
-    background-image: url("../../images/home/desktop/image-graphic-design.jpg");
+    background-image: url("/images/home/desktop/image-graphic-design.jpg");
   }
 }
 
@@ -736,7 +736,7 @@ input:-webkit-autofill {
 .feature__image-wrapper::before {
   content: "";
   position: absolute;
-  background-image: url("../../images/shared/desktop/bg-pattern-small-circle.svg");
+  background-image: url("/images/shared/desktop/bg-pattern-small-circle.svg");
   inset: 0;
   background-position: center;
   background-repeat: no-repeat;
@@ -825,50 +825,50 @@ input:-webkit-autofill {
   background-position: center;
   padding-inline: 0;
 }
-.hero-section .about__image-wrapper {
-  background-image: url("../../images/about/mobile/image-about-hero.jpg");
+.about__image-wrapper--hero {
+  background-image: url("/images/about/mobile/image-about-hero.jpg");
 }
-.talent-section .about__image-wrapper {
-  background-image: url("../../images/about/mobile/image-world-class-talent.jpg");
+.about__image-wrapper--talent {
+  background-image: url("/images/about/mobile/image-world-class-talent.jpg");
 }
-.deal-section .about__image-wrapper {
-  background-image: url("../../images/about/mobile/image-real-deal.jpg");
+.about__image-wrapper--deal {
+  background-image: url("/images/about/mobile/image-real-deal.jpg");
 }
 @media (min-width: 35em) {
-  .hero-section .about__image-wrapper {
-    background-image: url("../../images/about/tablet/image-about-hero.jpg");
+  .about__image-wrapper--hero {
+    background-image: url("/images/about/tablet/image-about-hero.jpg");
   }
-  .talent-section .about__image-wrapper {
-    background-image: url("../../images/about/tablet/image-world-class-talent.jpg");
+  .about__image-wrapper--hero {
+    background-image: url("/images/about/tablet/image-world-class-talent.jpg");
   }
-  .deal-section .about__image-wrapper {
-    background-image: url("../../images/about/tablet/image-real-deal.jpg");
+  .about__image-wrapper--deal {
+    background-image: url("/images/about/tablet/image-real-deal.jpg");
   }
 }
 @media (min-width: 45em) {
-  .hero-section .about__image-wrapper {
+  .about__image-wrapper--hero {
     min-height: 30rem;
-    background-image: url("../../images/about/desktop/image-about-hero.jpg");
+    background-image: url("/images/about/desktop/image-about-hero.jpg");
     grid-column-start: 2;
   }
-  .talent-section .about__image-wrapper {
-    background-image: url("../../images/about/desktop/image-world-class-talent.jpg");
+  .about__image-wrapper--talent {
+    background-image: url("/images/about/desktop/image-world-class-talent.jpg");
     min-height: 40rem;
   }
-  .deal-section .about__image-wrapper {
-    background-image: url("../../images/about/desktop/image-real-deal.jpg");
+  .about__image-wrapper--deal {
+    background-image: url("/images/about/desktop/image-real-deal.jpg");
     min-height: 40rem;
     grid-column-start: 2;
   }
-  .hero-section .about {
+  .about--hero {
     padding-inline: 0 !important;
     grid-template-columns: 55fr 45fr;
   }
-  .talent-section .about {
+  .about--talent {
     padding-inline: 0 !important;
     grid-template-columns: 45fr 55fr;
   }
-  .deal-section .about {
+  .about--deal {
     grid-template-columns: 55fr 45fr;
   }
   .about__text-content {
@@ -902,7 +902,7 @@ input:-webkit-autofill {
 .locations__image-wrapper::before {
   content: "";
   position: absolute;
-  background-image: url("../../images/shared/desktop/bg-pattern-small-circle.svg");
+  background-image: url("/images/shared/desktop/bg-pattern-small-circle.svg");
   inset: 0;
 }
 .locations__btn {
@@ -938,14 +938,14 @@ input:-webkit-autofill {
   cursor: pointer;
 }
 .location--canada .location__image-wrapper {
-  background-image: url("../../images/locations/desktop/image-map-canada.png");
+  background-image: url("/images/locations/desktop/image-map-canada.png");
   grid-row-start: 1;
 }
 .location--australia .location__image-wrapper {
-  background-image: url("../../images/locations/desktop/image-map-australia.png");
+  background-image: url("/images/locations/desktop/image-map-australia.png");
 }
 .location--uk .location__image-wrapper {
-  background-image: url("../../images/locations/desktop/image-map-united-kingdom.png");
+  background-image: url("/images/locations/desktop/image-map-united-kingdom.png");
   grid-row-start: 1;
 }
 .location__contact-link {
@@ -968,14 +968,14 @@ input:-webkit-autofill {
     grid-template-columns: 1fr 1fr;
   }
   .location--canada .location__image-wrapper {
-    background-image: url("../../images/locations/tablet/image-map-canada.png");
+    background-image: url("/images/locations/tablet/image-map-canada.png");
     grid-row-start: 1;
   }
   .location--australia .location__image-wrapper {
-    background-image: url("../../images/locations/tablet/image-map-australia.png");
+    background-image: url("/images/locations/tablet/image-map-australia.png");
   }
   .location--uk .location__image-wrapper {
-    background-image: url("../../images/locations/tablet/image-map-uk.png");
+    background-image: url("/images/locations/tablet/image-map-uk.png");
     grid-row-start: 1;
   }
 }

@@ -23,16 +23,16 @@
   }
 
   &--canada &__image-wrapper {
-    background-image: url('../../images/locations/desktop/image-map-canada.png');
+    background-image: url('/images/locations/desktop/image-map-canada.png');
     grid-row-start: 1;
   }
 
   &--australia &__image-wrapper {
-    background-image: url('../../images/locations/desktop/image-map-australia.png');
+    background-image: url('/images/locations/desktop/image-map-australia.png');
   }
 
   &--uk &__image-wrapper {
-    background-image: url('../../images/locations/desktop/image-map-united-kingdom.png');
+    background-image: url('/images/locations/desktop/image-map-united-kingdom.png');
     grid-row-start: 1;
   }
 
@@ -61,16 +61,16 @@
     }
 
     &--canada &__image-wrapper {
-      background-image: url('../../images/locations/tablet/image-map-canada.png');
+      background-image: url('/images/locations/tablet/image-map-canada.png');
       grid-row-start: 1;
     }
 
     &--australia &__image-wrapper {
-      background-image: url('../../images/locations/tablet/image-map-australia.png');
+      background-image: url('/images/locations/tablet/image-map-australia.png');
     }
 
     &--uk &__image-wrapper {
-      background-image: url('../../images/locations/tablet/image-map-uk.png');
+      background-image: url('/images/locations/tablet/image-map-uk.png');
       grid-row-start: 1;
     }
 
