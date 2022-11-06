@@ -2,9 +2,9 @@
 
 const mainHeader = document.querySelector('.header-section')
 const overlay = document.querySelector('.overlay');
-const webDesignProjects = document.querySelectorAll('.web-design');
-const appDesignProjects = document.querySelectorAll('.app-design');
-const graphicDesignProjects = document.querySelectorAll('.graphic-design');
+const webDesignProjects = document.querySelectorAll('.service--web-design');
+const appDesignProjects = document.querySelectorAll('.service--app-design');
+const graphicDesignProjects = document.querySelectorAll('.service--graphic-design');
 
 // Navigation
 let openNavigationButton = document.querySelector('.header__nav-open-btn');
