@@ -23,7 +23,6 @@
   --dark-grey: hsl(264, 5%, 20%);
   --light-grey: hsl(210, 17%, 95%);
   --footer-text-color: hsl(0, 0%, 100%, 0.65);
-  /* Raw Colors*/
   --rawBlack: 270, 3%, 11%;
   --rawPeach: 1, 73%, 66%;
 
@@ -31,8 +30,6 @@
   --flex-gap: 1rem;
   --flow-space: 1.25rem;
   --section-padding: 3.75rem 0;
-  --footer-margin-top: 15rem;
-  --footer-container-padding-top: 12rem;
 
   /* Border Radius*/
   --border-radius-container: 0;
@@ -45,12 +42,6 @@
   }
 }
 
-@media (min-width: 35em) {
-  :root {
-    --footer-container-padding-top: 9rem;
-  }
-}
-
 @media (min-width: 45rem) {
   :root {
     --font-size-500: 3rem;
@@ -58,7 +49,6 @@
     --font-size-400: 2.5rem;
     --font-size-100: 1rem;
 
-    /* Spacing */
     --flex-gap: 1rem;
     --section-padding: 5rem 0;
 
@@ -74,7 +64,6 @@
 
 @media (min-width: 80rem) {
   :root {
-    /* Border Radius*/
     --border-radius-container: 0.75rem;
   }
 }

@@ -1,5 +1,5 @@
 .footer-section {
-  margin-top: var(--footer-margin-top);
+  margin-top: 15rem;
   position: relative;
 }
 
@@ -83,7 +83,7 @@
   gap: 2rem;
   place-items: center;
   text-align: center;
-  padding-top: var(--footer-container-padding-top);
+  padding-top: 12rem;
 
   &__logo-wrapper {
     display: flex;
@@ -116,6 +116,10 @@
 
   &__social-logo:hover {
     color: var(--peach);
+  }
+
+  @media (min-width: 35em) {
+    padding-top: 9rem;
   }
 
   @media (min-width: 45em) {
