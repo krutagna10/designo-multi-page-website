@@ -991,8 +991,13 @@ body {
   padding-bottom: 3rem;
   border-radius: var(--border-radius-container);
 }
-
-.input {
+.contact__text-content {
+  text-align: center;
+}
+.contact__input-wrapper {
+  position: relative;
+}
+.contact__form-input {
   display: block;
   background: transparent;
   border: none;
@@ -1001,12 +1006,11 @@ body {
   border-bottom: 1px solid var(--white);
   width: 100%;
 }
-
-.input-container {
-  position: relative;
+.contact__form-input:focus {
+  outline: none;
+  border-bottom: 2px solid var(--white);
 }
-
-.error {
+.contact__error-wrapper {
   position: absolute;
   top: 65%;
   right: 0;
@@ -1015,20 +1019,36 @@ body {
   visibility: hidden;
   pointer-events: none;
 }
-
-.show-error .error {
+.show-error .contact__error-wrapper {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
 }
-
-.error-message {
+.contact__error-message {
   font-size: 0.75rem;
 }
+.contact__submit-btn {
+  justify-self: center;
+}
+@media (min-width: 35em) {
+  .contact {
+    padding-inline: 4rem !important;
+  }
+  .contact__text-content {
+    text-align: left;
+  }
+  .contact__submit-btn {
+    justify-self: end;
+  }
+}
+@media (min-width: 45em) {
+  .contact__text-content {
+    padding-right: 4rem;
+  }
+}
 
-.input:focus {
-  outline: none;
-  border-bottom: 2px solid var(--white);
+textarea {
+  resize: none;
 }
 
 ::placeholder {
@@ -1036,48 +1056,16 @@ body {
   opacity: 0.5;
 }
 
-.submit-btn {
-  justify-self: center;
-}
-
-.contact .contact__text-content {
-  text-align: center;
-}
-
-@media (min-width: 35em) {
-  .contact {
-    padding-inline: 4rem !important;
-  }
-  .submit-btn {
-    justify-self: end;
-  }
-  .contact .contact__text-content {
-    text-align: left;
-  }
-}
-@media (min-width: 45em) {
-  .contact .contact__text-content {
-    padding-right: 4rem;
-  }
-}
-/* Setting resize none*/
-textarea {
-  resize: none;
-}
-
-/* Removing arrows in input:number*/
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/* Changing autocomplete color*/
 input:-webkit-autofill {
   -webkit-background-clip: text;
 }
 
-/*Change text in autofill text box*/
 input:-webkit-autofill {
   -webkit-text-fill-color: var(--white) !important;
 }

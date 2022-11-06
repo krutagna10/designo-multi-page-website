@@ -50,50 +50,50 @@
 
         <div class="contact__form-wrapper">
             <form action="#" class="contact__form flow grid">
-                <div class="input-container name-container">
-                    <label for="person-name">
-                        <input type="text" name="person-name" class="input" id="person-name" placeholder="Name">
+                <div class="contact__input-wrapper contact__name-wrapper">
+                    <label for="contact__name">
+                        <input type="text" name="contact__name" class="contact__form-input" id="contact__name" placeholder="Name">
                     </label>
-                    <div class="error flex flex-gap">
-                        <p class="error-message text-color-white">Name can't be empty</p>
-                        <img src="../images/contact/desktop/icon-error.svg" class="error-icon" alt="Error icon">
+                    <div class="contact__error-wrapper flex flex-gap">
+                        <p class="contact__error-message text-color-white">Name can't be empty</p>
+                        <img src="../images/contact/desktop/icon-error.svg" class="contact__error-icon" alt="Error icon">
                     </div>
                 </div>
 
-                <div class="input-container email-container">
-                    <label for="email-address">
-                        <input type="email" name="email-address" class="input" id="email-address"
+                <div class="contact__input-wrapper contact__email-wrapper">
+                    <label for="contact__email">
+                        <input type="email" name="contact__email" class="contact__form-input" id="contact__email"
                                placeholder="Email Address">
                     </label>
-                    <div class="error flex flex-gap">
-                        <p class="error-message text-color-white">Enter a valid email</p>
-                        <img src="../images/contact/desktop/icon-error.svg" class="error-icon" alt="Error icon">
+                    <div class="contact__error-wrapper flex flex-gap">
+                        <p class="contact__error-message text-color-white">Enter a valid email</p>
+                        <img src="../images/contact/desktop/icon-error.svg" class="contact__error-icon" alt="Error icon">
                     </div>
                 </div>
 
-                <div class="input-container phone-number-container">
-                    <label for="phone-number">
-                        <input type="number" name="phone-number" class="input" id="phone-number"
+                <div class="contact__input-wrapper contact__number-wrapper">
+                    <label for="contact__phone-number">
+                        <input type="number" name="contact__phone-number" class="contact__form-input" id="contact__phone-number"
                                placeholder="Phone Number">
                     </label>
-                    <div class="error flex flex-gap">
-                        <p class="error-message text-color-white">Phone number can't be empty</p>
-                        <img src="../images/contact/desktop/icon-error.svg" class="error-icon" alt="Error icon">
+                    <div class="contact__error-wrapper flex flex-gap">
+                        <p class="contact__error-message contact__error-message--phone text-color-white">Phone number can't be empty</p>
+                        <img src="../images/contact/desktop/icon-error.svg" class="contact__error-icon" alt="Error icon">
                     </div>
                 </div>
 
-                <div class="input-container message-container">
-                    <label for="message">
-                    <textarea name="message" id="message" cols="30" rows="5" class="input"
+                <div class="contact__input-wrapper contact__message-wrapper">
+                    <label for="contact__message">
+                    <textarea name="contact__message" id="contact__message" cols="30" rows="5" class="contact__form-input"
                               placeholder="Your Message"></textarea>
                     </label>
-                    <div class="error flex flex-gap">
-                        <p class="error-message text-color-white">Message can't be empty</p>
-                        <img src="../images/contact/desktop/icon-error.svg" class="error-icon" alt="Error icon">
+                    <div class="contact__error-wrapper flex flex-gap">
+                        <p class="contact__error-message text-color-white">Message can't be empty</p>
+                        <img src="../images/contact/desktop/icon-error.svg" class="contact__error-icon" alt="Error icon">
                     </div>
                 </div>
 
-                <button class="submit-btn btn btn--light uppercase letter-spacing-1">
+                <button class="contact__submit-btn btn btn--light uppercase letter-spacing-1">
                     Submit
                 </button>
             </form>
