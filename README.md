@@ -11,6 +11,6 @@
 ### Built with
 
 - HTML
-- CSS
+- SCSS
 - Vanilla Javascript
 
