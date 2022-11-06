@@ -3,7 +3,7 @@
   position: relative;
 }
 
-.contact-section {
+.footer-contact-section {
   position: absolute;
   width: 90%;
   top: -50%;
@@ -12,34 +12,34 @@
 }
 
 @media (min-width: 25em) {
-  .contact-section {
+  .footer-contact-section {
     top: -35%;
     transform: translate(-50%, 35%);
   }
 }
 
 @media (min-width: 35em) {
-  .contact-section {
+  .footer-contact-section {
     top: -50%;
     transform: translate(-50%, 50%);
   }
 }
 
 @media (min-width: 45em) {
-  .contact-section {
+  .footer-contact-section {
     top: -80%;
     transform: translate(-50%, 80%);
   }
 }
 
 @media (min-width: 75em) {
-  .contact-section {
+  .footer-contact-section {
     top: -60%;
     transform: translate(-50%, 60%);
   }
 }
 
-.contact {
+.footer-contact {
   padding: 4rem 1rem;
   border-radius: 0.75rem;
 
