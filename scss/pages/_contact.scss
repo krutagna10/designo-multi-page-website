@@ -1,4 +1,4 @@
-.contact-us-container {
+.contact {
   padding-top: 3rem;
   padding-bottom: 3rem;
   border-radius: var(--border-radius-container);
@@ -38,6 +38,45 @@
   font-size: 0.75rem;
 }
 
+
+.input:focus {
+  outline: none;
+  border-bottom: 2px solid var(--white);
+}
+
+::placeholder {
+  color: var(--white);
+  opacity: 0.5;
+}
+
+.submit-btn {
+  justify-self: center;
+}
+
+.contact .contact__text-content {
+  text-align: center;
+}
+
+@media (min-width: 35em) {
+  .contact {
+    padding-inline: 4rem !important;
+  }
+
+  .submit-btn {
+    justify-self: end;
+  }
+
+  .contact .contact__text-content {
+    text-align: left;
+  }
+}
+
+@media (min-width: 45em) {
+  .contact .contact__text-content {
+    padding-right: 4rem;
+  }
+}
+
 /* Setting resize none*/
 textarea {
   resize: none;
@@ -58,42 +97,4 @@ input:-webkit-autofill {
 /*Change text in autofill text box*/
 input:-webkit-autofill {
   -webkit-text-fill-color: var(--white) !important;
-}
-
-.input:focus {
-  outline: none;
-  border-bottom: 2px solid var(--white);
-}
-
-::placeholder {
-  color: var(--white);
-  opacity: 0.5;
-}
-
-.submit-btn {
-  justify-self: center;
-}
-
-.contact-us-container .text-content {
-  text-align: center;
-}
-
-@media (min-width: 35em) {
-  .contact-us-container {
-    padding-inline: 4rem !important;
-  }
-
-  .submit-btn {
-    justify-self: end;
-  }
-
-  .contact-us-container .text-content {
-    text-align: left;
-  }
-}
-
-@media (min-width: 45em) {
-  .contact-us-container .text-content {
-    padding-right: 4rem;
-  }
 }
