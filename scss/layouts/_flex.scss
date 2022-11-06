@@ -3,7 +3,12 @@
 }
 
 .flex-gap {
-  gap: var(--flex-gap);
+  gap: var(--gap);
+}
+
+.flex-align-justify-center {
+  justify-content: center;
+  align-items: center;
 }
 
 .flex-justify-space-between {

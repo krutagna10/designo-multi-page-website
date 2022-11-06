@@ -1,29 +1,30 @@
 'use strict';
 
-const mainHeader = document.querySelector('.header-section')
+const header = document.querySelector('.header-section')
 const overlay = document.querySelector('.overlay');
-const webDesignProjects = document.querySelectorAll('.service--web-design');
-const appDesignProjects = document.querySelectorAll('.service--app-design');
-const graphicDesignProjects = document.querySelectorAll('.service--graphic-design');
+const webProjects = document.querySelectorAll('.service--web');
+const appProjects = document.querySelectorAll('.service--app');
+const graphicProjects = document.querySelectorAll('.service--graphic');
+const serviceSection = document.querySelectorAll('.service-section');
 
 // Navigation
 let openNavigationButton = document.querySelector('.header__nav-open-btn');
 let closeNavigationButton = document.querySelector('.header__nav-close-btn');
 
 openNavigationButton.addEventListener('click', () => {
-    mainHeader.classList.add('navigation-open');
+    header.classList.add('navigation-open');
     overlay.classList.remove('hidden');
 })
 
 closeNavigationButton.addEventListener('click', () => {
-    mainHeader.classList.remove('navigation-open');
+    header.classList.remove('navigation-open');
     overlay.classList.add('hidden');
 })
 
 // Removing overlay
 const hideMobileNavigation = () => {
     overlay.classList.add('hidden');
-    mainHeader.classList.remove('navigation-open');
+    header.classList.remove('navigation-open');
 }
 
 // When the user click on escape key
@@ -43,21 +44,33 @@ window.addEventListener("resize", function() {
 
 
 // When the user clicks on any project container
-for (const webDesignProject of webDesignProjects) {
-    webDesignProject.addEventListener('click', () => {
-        window.location.href = 'pages/web-design.html';
+for (const webProject of webProjects) {
+    webProject.addEventListener('click', () => {
+        if (webProject.classList.contains('service--home')) {
+            window.location.href = 'pages/web-design.html';
+        } else {
+            window.location.href = 'web-design.html';
+        }
     });
 }
 
-for (const appDesignProject of appDesignProjects) {
-    appDesignProject.addEventListener('click', () => {
-        window.location.href = 'pages/app-design.html';
+for (const appProject of appProjects) {
+    appProject.addEventListener('click', () => {
+        if (appProject.classList.contains('service--home')) {
+            window.location.href = 'pages/app-design.html';
+        } else {
+            window.location.href = 'app-design.html';
+        }
     });
 }
 
-for (const graphicDesignProject of graphicDesignProjects) {
-    graphicDesignProject.addEventListener('click', () => {
-        window.location.href = 'pages/graphic-design.html';
+for (const graphicProject of graphicProjects) {
+    graphicProject.addEventListener('click', () => {
+        if (graphicProject.classList.contains('service--home')) {
+            window.location.href = 'pages/graphic-design.html';
+        } else {
+            window.location.href = 'graphic-design.html';
+        }
     });
 }
 

@@ -11,8 +11,8 @@
 }
 
 .header {
-  &__logo {
-    max-width: 60% !important;
+  &__logo-wrapper {
+    max-width: 10rem;
   }
 
   &__nav {
@@ -84,9 +84,7 @@
   }
 
   @media (min-width: 30em) {
-    &__logo {
-      max-width: 50% !important;
-    }
+
   }
 
   @media (min-width: 45em) {
@@ -95,7 +93,7 @@
     }
 
     &__logo-wrapper {
-      max-width: 40%;
+      max-width: 12rem;
     }
 
     &__nav {
