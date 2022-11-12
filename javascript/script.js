@@ -8,17 +8,9 @@ const graphicProjects = document.querySelectorAll('.service--graphic');
 const serviceSection = document.querySelectorAll('.service-section');
 
 // Navigation
-let openNavigationButton = document.querySelector('.header__nav-open-btn');
-let closeNavigationButton = document.querySelector('.header__nav-close-btn');
-
-openNavigationButton.addEventListener('click', () => {
-    header.classList.add('navigation-open');
-    overlay.classList.remove('hidden');
-})
-
-closeNavigationButton.addEventListener('click', () => {
-    header.classList.remove('navigation-open');
-    overlay.classList.add('hidden');
+const mobileNavToggle = document.querySelector('.header__mobile-nav-toggle');
+mobileNavToggle.addEventListener('click', () => {
+    header.classList.toggle('navigation-open');
 })
 
 // Removing overlay
