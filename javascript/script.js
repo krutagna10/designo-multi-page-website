@@ -2,10 +2,6 @@
 
 const header = document.querySelector('.header-section')
 const overlay = document.querySelector('.overlay');
-const webProjects = document.querySelectorAll('.service--web');
-const appProjects = document.querySelectorAll('.service--app');
-const graphicProjects = document.querySelectorAll('.service--graphic');
-const serviceSection = document.querySelectorAll('.service-section');
 
 // Navigation
 const mobileNavToggle = document.querySelector('.header__mobile-nav-toggle');
@@ -34,37 +30,6 @@ window.addEventListener("resize", function() {
 });
 
 
-
-// When the user clicks on any project container
-for (const webProject of webProjects) {
-    webProject.addEventListener('click', () => {
-        if (webProject.classList.contains('service--home')) {
-            window.location.href = 'pages/web-design.html';
-        } else {
-            window.location.href = 'web-design.html';
-        }
-    });
-}
-
-for (const appProject of appProjects) {
-    appProject.addEventListener('click', () => {
-        if (appProject.classList.contains('service--home')) {
-            window.location.href = 'pages/app-design.html';
-        } else {
-            window.location.href = 'app-design.html';
-        }
-    });
-}
-
-for (const graphicProject of graphicProjects) {
-    graphicProject.addEventListener('click', () => {
-        if (graphicProject.classList.contains('service--home')) {
-            window.location.href = 'pages/graphic-design.html';
-        } else {
-            window.location.href = 'graphic-design.html';
-        }
-    });
-}
 
 
 

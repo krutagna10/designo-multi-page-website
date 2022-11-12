@@ -15,8 +15,12 @@
   grid-template-columns: 1fr;
 }
 
-.grid-place-center {
+.grid--items-center {
   place-items: center;
+}
+
+.grid--content-center {
+  place-content: center;
 }
 
 .grid-gap {

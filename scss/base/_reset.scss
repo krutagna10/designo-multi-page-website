@@ -27,16 +27,18 @@ p {
   font-weight: var(--font-weight-regular);
 }
 
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
 html {
   width: 100%;
   overflow-x: hidden;
 }
 
-/* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
 }
-
 
 body {
   font-family: var(--font-family-jost);
@@ -45,4 +47,20 @@ body {
   line-height: 1.5;
   overflow-x: hidden;
   position: relative;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
