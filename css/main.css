@@ -649,34 +649,6 @@ body {
   color: var(--white);
 }
 
-textarea {
-  resize: none;
-}
-
-::placeholder {
-  color: var(--white);
-  opacity: 0.5;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
-input:-webkit-autofill {
-  -webkit-background-clip: text;
-}
-
-input:-webkit-autofill {
-  -webkit-text-fill-color: var(--white) !important;
-}
-
 .service {
   min-height: 15rem;
   border-radius: 0.75rem;
@@ -1103,6 +1075,32 @@ input:-webkit-autofill {
   .contact-page .footer {
     padding-top: 2.5rem;
   }
+}
+textarea {
+  resize: none;
+}
+
+::placeholder {
+  color: var(--white);
+  opacity: 0.5;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input:-webkit-autofill {
+  -webkit-background-clip: text;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: var(--white) !important;
 }
 
 /*# sourceMappingURL=main.css.map */
