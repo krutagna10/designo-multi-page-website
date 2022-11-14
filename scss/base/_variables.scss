@@ -7,7 +7,7 @@
   --font-weight-medium: 500;
 
   /* Font Sizes */
-  --font-size-500: 1.75rem;
+  --font-size-500: clamp(1.5rem, 1vw + 1rem, 3rem);
   --font-size-400: 1.75rem;
   --font-size-300: 1.5rem;
   --font-size-200: 1.25rem;

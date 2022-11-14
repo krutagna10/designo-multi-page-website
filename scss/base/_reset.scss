@@ -6,7 +6,8 @@
   padding: 0;
 }
 
-img:not(.hero__image) {
+img:not(.hero__image),
+picture {
   display: block;
   max-width: 100%;
 }
