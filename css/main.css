@@ -344,6 +344,7 @@ body {
   z-index: 99;
   opacity: 0;
   transform: translateX(100%);
+  pointer-events: none;
   visibility: hidden;
 }
 .navigation-open .header__nav {
@@ -390,8 +391,6 @@ body {
     position: static;
     height: 100%;
     padding-left: 0;
-    display: flex;
-    align-items: center;
     opacity: 1;
     transform: translateX(0);
     visibility: visible;
