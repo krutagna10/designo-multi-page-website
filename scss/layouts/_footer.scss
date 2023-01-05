@@ -89,7 +89,15 @@
      max-width: 10rem;
   }
 
+  &__nav-list {
+    list-style: none;
+  }
+
   &__nav-link {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-1);
     font-size: 0.875rem;
     transition: all 0.3s ease;
   }

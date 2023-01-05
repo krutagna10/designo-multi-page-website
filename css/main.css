@@ -567,7 +567,14 @@ body {
 .footer__logo-wrapper {
   max-width: 10rem;
 }
+.footer__nav-list {
+  list-style: none;
+}
 .footer__nav-link {
+  color: var(--white);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-1);
   font-size: 0.875rem;
   transition: all 0.3s ease;
 }
