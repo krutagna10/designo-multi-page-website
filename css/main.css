@@ -29,6 +29,8 @@
   --section-padding: 3.75rem 0;
   /* Border Radius*/
   --border-radius-container: 0;
+  --letter-spacing-2: 0.3125em;
+  --letter-spacing-1: 0.125em;
 }
 
 @media (min-width: 25rem) {
@@ -168,11 +170,11 @@ body {
 
 /* Letter Spacing*/
 .letter-spacing-2 {
-  letter-spacing: 5px;
+  letter-spacing: 0.3125em;
 }
 
 .letter-spacing-1 {
-  letter-spacing: 2px;
+  letter-spacing: 0.125em;
 }
 
 /* Font Size */
@@ -359,9 +361,12 @@ body {
   flex-direction: column;
 }
 .header__nav-link {
-  text-decoration: none;
+  font-size: var(--font-size-300);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-1);
   color: hsl(var(--raw-white), 0.75);
   transition: all 0.3s ease;
+  text-decoration: none;
   border-bottom: 1px solid transparent;
 }
 .header__nav-link:hover {
