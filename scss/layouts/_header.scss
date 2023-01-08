@@ -3,7 +3,7 @@
   position: relative;
 }
 
-@media (min-width: 45em) {
+@media (min-width: 48em) {
   .header-section {
     padding: 2.5rem 0;
     position: relative;
@@ -76,7 +76,7 @@
     background-image: url('/images/shared/mobile/icon-close.svg');
   }
 
-  @media (min-width: 45em) {
+  @media (min-width: 48em) {
     &__mobile-nav-toggle {
       display: none;
     }

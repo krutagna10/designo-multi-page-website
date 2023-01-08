@@ -5,7 +5,7 @@
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   /* Font Sizes */
-  --font-size-500: clamp(1.5rem, 1vw + 1rem, 3rem);
+  --font-size-500: 2rem;
   --font-size-400: 1.75rem;
   --font-size-300: 1.5rem;
   --font-size-200: 1.25rem;
@@ -19,7 +19,7 @@
   --very-light-peach: #FDF3F0;
   --dark-grey: hsl(264, 5%, 20%);
   --light-grey: hsl(210, 17%, 95%);
-  --footer-text-color: hsl(0, 0%, 100%, 0.65);
+  --grey: hsl(0, 0%, 100%, 0.65);
   --raw-white: 0, 0%, 100%;
   --raw-black: 270, 3%, 11%;
   --raw-peach: 1, 73%, 66%;
@@ -33,22 +33,16 @@
   --letter-spacing-1: 0.125em;
 }
 
-@media (min-width: 25rem) {
-  :root {
-    --font-size-500: 2rem;
-  }
-}
-@media (min-width: 45rem) {
+@media (min-width: 48rem) {
   :root {
     --font-size-500: 3rem;
     --font-size-300: 0.875rem;
     --font-size-400: 2.5rem;
     --font-size-100: 1rem;
-    --gap: 1rem;
     --section-padding: 5rem 0;
   }
 }
-@media (min-width: 65em) {
+@media (min-width: 64em) {
   :root {
     --section-padding: 4rem 0;
   }
@@ -222,28 +216,28 @@ body {
   background-color: var(--black);
 }
 
-.text-color-dark-grey {
+.text-dark-grey {
   color: var(--dark-grey);
 }
 
-.text-color-peach {
+.text-peach {
   color: var(--peach);
 }
 
-.text-color-light-grey {
+.text-light-grey {
   color: var(--light-grey);
 }
 
-.text-color-white {
+.text-white {
   color: var(--white);
 }
 
-.text-color-black {
+.text-black {
   color: var(--black);
 }
 
-.footer-text-color {
-  color: var(--footer-text-color);
+.text-grey {
+  color: var(--grey);
 }
 
 .container {
@@ -265,7 +259,7 @@ body {
   align-items: center;
 }
 
-.flex--justify-space-between {
+.flex--justify-space {
   justify-content: space-between;
 }
 
@@ -323,7 +317,7 @@ body {
   position: relative;
 }
 
-@media (min-width: 45em) {
+@media (min-width: 48em) {
   .header-section {
     padding: 2.5rem 0;
     position: relative;
@@ -384,7 +378,7 @@ body {
 .navigation-open .header__mobile-nav-toggle {
   background-image: url("/images/shared/mobile/icon-close.svg");
 }
-@media (min-width: 45em) {
+@media (min-width: 48em) {
   .header__mobile-nav-toggle {
     display: none;
   }
@@ -439,9 +433,11 @@ body {
   margin: 0 auto;
   overflow: hidden;
   gap: 3rem !important;
-  padding: 3rem 0;
+  padding-top: 3rem;
   border-radius: var(--border-radius-container);
   position: relative;
+  background-image: url("/images/home/desktop/bg-pattern-hero-home.svg");
+  background-repeat: no-repeat;
 }
 .hero__description {
   padding-inline: 1rem;
@@ -452,7 +448,6 @@ body {
 .hero__image-wrapper {
   min-height: 24rem;
   position: relative;
-  background-color: var(--peach);
 }
 .hero__image {
   position: absolute;
@@ -470,6 +465,7 @@ body {
     min-height: 40rem;
     gap: 1rem;
     place-items: center;
+    background-position: center right;
   }
   .hero__description {
     text-align: left;
@@ -633,16 +629,22 @@ body {
 }
 
 .btn {
+  font-size: var(-font-size-100);
+  text-decoration: none;
   display: block;
   border: none;
   padding: 0.75rem 1.5rem;
   cursor: pointer;
-  max-width: 10rem;
   border-radius: 0.25rem;
   transition: all 0.3s ease;
+  color: var(--white);
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-weight: var(--font-weight-medium);
 }
 
 .btn--light {
+  color: var(--black);
   background-color: var(--white);
 }
 
@@ -653,12 +655,10 @@ body {
 
 .btn--dark {
   background-color: var(--peach);
-  color: var(--white);
 }
 
 .btn--dark:hover {
   background-color: var(--light-peach);
-  color: var(--white);
 }
 
 .service {
@@ -671,6 +671,8 @@ body {
   cursor: pointer;
   overflow: hidden;
   text-align: center;
+  color: var(--white);
+  text-decoration: none;
 }
 .service::before {
   content: "";
