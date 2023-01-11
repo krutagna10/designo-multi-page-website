@@ -18,27 +18,30 @@
 <body>
 
 <header class="header-section">
+    <a class="skip-to-content" href="#main">Skip to content</a>
     <div class="header container flex flex--justify-space flex--align-center">
         <a href="../index.html" class="header__logo-wrapper">
             <img src="/images/shared/desktop/logo-dark.png" class="header__logo" alt="Designo">
         </a>
-        <nav class="header__nav">
-            <ul class="header__nav-list flex">
+        <nav class="header__nav" aria-label="primary-navigation">
+            <ul id="header__nav-list" class="header__nav-list flex" data-visible="false">
                 <li><a href="about.html" class="header__nav-link">Our Content</a></li>
                 <li><a href="locations.html" class="header__nav-link">Locations</a></li>
                 <li><a href="contact.html" class="header__nav-link">Contact</a></li>
             </ul>
         </nav>
-        <button class="header__mobile-nav-toggle"></button>
+        <button class="header__mobile-nav-toggle" aria-controls="header__nav-list" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+        </button>
     </div>
 </header>
 
-<main>
+<main id="main">
     <section class="hero-section">
         <div class="container hero-design grid grid--items-center background-peach text-align-center">
             <div class="hero-design__text-content flow">
-                <h1 class="primary-heading text-color-white">Graphic design</h1>
-                <p class="font-size-100 text-color-white"> We deliver eye-catching branding materials that are tailored
+                <h1 class="primary-heading text-white">Graphic design</h1>
+                <p class="font-size-100 text-white"> We deliver eye-catching branding materials that are tailored
                     to meet your business objectives.</p>
             </div>
         </div>
@@ -53,10 +56,10 @@
                              alt="Timbrown book">
                     </div>
                     <div class="card__text-content text-align-center flow">
-                        <h3 class="card__heading tertiary-heading uppercase letter-spacing-2 text-color-peach">
+                        <h3 class="card__heading tertiary-heading uppercase letter-spacing-2 text-peach">
                             Tim Brown
                         </h3>
-                        <p class="card__text text-color-dark-grey font-size-100">
+                        <p class="card__text text-dark-grey font-size-100">
                             A book cover designed for Tim Brown’s new release, ‘Change’
                         </p>
                     </div>
@@ -70,10 +73,10 @@
                              alt="Boxed Water">
                     </div>
                     <div class="card__text-content text-align-center flow">
-                        <h3 class="card__heading tertiary-heading uppercase letter-spacing-2 text-color-peach">
+                        <h3 class="card__heading tertiary-heading uppercase letter-spacing-2 text-peach">
                             Boxed water
                         </h3>
-                        <p class="card__text text-color-dark-grey font-size-100">
+                        <p class="card__text text-dark-grey font-size-100">
                             A simple packaging concept made for Boxed Water
                         </p>
                     </div>
@@ -87,10 +90,10 @@
                              alt="Science image">
                     </div>
                     <div class="card__text-content text-align-center flow">
-                        <h3 class="card__heading tertiary-heading uppercase letter-spacing-2 text-color-peach">
+                        <h3 class="card__heading tertiary-heading uppercase letter-spacing-2 text-peach">
                             Science!
                         </h3>
-                        <p class="card__text text-color-dark-grey font-size-100">
+                        <p class="card__text text-dark-grey font-size-100">
                             A poster made in collaboration with the Federal Art Project
                         </p>
                     </div>
@@ -102,19 +105,19 @@
     <section class="services-section section-padding">
         <div class="container grid grid--2-columns">
             <a href="web-design.html" class="service service--web grid grid--content-center grid-gap text-decoration-none">
-                <h2 class="service__heading secondary-heading text-color-white uppercase letter-spacing-1">
+                <h2 class="service__heading secondary-heading text-white uppercase letter-spacing-1">
                     Web Design
                 </h2>
-                <p class="service__text font-size-100 text-color-white uppercase letter-spacing-2">
+                <p class="service__text font-size-100 text-white uppercase letter-spacing-2">
                     View Projects <span class="service__link-symbol">&#62;</span>
                 </p>
             </a>
 
             <a href="app-design.html" class="service service--app grid grid--content-center grid-gap text-decoration-none">
-                <h2 class="service__heading secondary-heading text-color-white uppercase letter-spacing-1">
+                <h2 class="service__heading secondary-heading text-white uppercase letter-spacing-1">
                     App Design
                 </h2>
-                <p class="service__text font-size-100 text-color-white uppercase letter-spacing-2">
+                <p class="service__text font-size-100 text-white uppercase letter-spacing-2">
                     View Projects <span class="service__link-symbol">&#62;</span>
                 </p>
             </a>
@@ -126,17 +129,17 @@
     <section class="footer-contact-section">
         <div class="footer-contact container background-peach grid grid--2-columns">
             <div class="footer-contact__text-content flow">
-                <h2 class="footer-contact__heading secondary-heading text-color-white">
+                <h2 class="footer-contact__heading secondary-heading text-white">
                     Let’s talk about your project
                 </h2>
-                <p class="footer-contact__text font-size-100 text-color-white">
+                <p class="footer-contact__text font-size-100 text-white">
                     Ready to take it to the next level? Contact us today and find out how our expertise can help your
                     business grow.
                 </p>
             </div>
             <div class="footer-contact__button-wrapper grid">
                 <a href="contact.html"
-                   class="footer-contact__btn btn btn--light text-color-dark-grey text-decoration-none uppercase">
+                   class="footer-contact__btn btn btn--light text-dark-grey text-decoration-none uppercase">
                     Get in Touch
                 </a>
             </div>

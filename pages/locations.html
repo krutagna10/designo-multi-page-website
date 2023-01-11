@@ -18,38 +18,42 @@
 <body>
 
 <header class="header-section">
+    <a class="skip-to-content" href="#main">Skip to content</a>
     <div class="header container flex flex--justify-space flex--align-center">
         <a href="../index.html" class="header__logo-wrapper">
             <img src="/images/shared/desktop/logo-dark.png" class="header__logo" alt="Designo">
         </a>
-        <nav class="header__nav">
-            <ul class="header__nav-list flex">
+        <nav class="header__nav" aria-label="primary-navigation">
+            <ul id="header__nav-list" class="header__nav-list flex" data-visible="false">
                 <li><a href="about.html" class="header__nav-link">Our Content</a></li>
                 <li><a href="locations.html" class="header__nav-link">Locations</a></li>
                 <li><a href="contact.html" class="header__nav-link">Contact</a></li>
             </ul>
         </nav>
-        <button class="header__mobile-nav-toggle"></button>
+        <button class="header__mobile-nav-toggle" aria-controls="header__nav-list" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+        </button>
     </div>
 </header>
 
+<main id="main">
 <section class="location-section hero-section">
     <div class="location location--canada container grid">
         <div class="location__text-content background-very-light-peach flow flex flex--column flex--justify-center">
-            <h2 class="location__heading secondary-heading text-color-peach">Canada</h2>
+            <h2 class="location__heading secondary-heading text-peach">Canada</h2>
             <div class="location__contact-wrapper grid">
                 <div class="location__address-wrapper">
-                    <p class="location__address font-size-100 text-color-dark-grey text-bold">Designo Central Office</p>
-                    <p class="location__address font-size-100 text-color-dark-grey">3886 Wellington Street</p>
-                    <p class="location__address font-size-100 text-color-dark-grey">Toronto, Ontario M9C 3J5</p>
+                    <p class="location__address font-size-100 text-dark-grey text-bold">Designo Central Office</p>
+                    <p class="location__address font-size-100 text-dark-grey">3886 Wellington Street</p>
+                    <p class="location__address font-size-100 text-dark-grey">Toronto, Ontario M9C 3J5</p>
                 </div>
 
                 <div class="location__contact-box">
-                    <p class="location__contact-heading font-size-100 text-color-dark-grey text-bold">Contact</p>
-                    <a class="location__contact-link font-size-100 text-color-dark-grey text-decoration-none"
+                    <p class="location__contact-heading font-size-100 text-dark-grey text-bold">Contact</p>
+                    <a class="location__contact-link font-size-100 text-dark-grey text-decoration-none"
                        href="tel: +1 253-863-8967">P : +1
                         253-863-8967</a>
-                    <a class="location__contact-link font-size-100 text-color-dark-grey text-decoration-none"
+                    <a class="location__contact-link font-size-100 text-dark-grey text-decoration-none"
                        href="contact@designo.co">M :
                         contact@designo.co</a>
                 </div>
@@ -61,19 +65,19 @@
     <div class="location location--australia container grid">
         <div class="location__image-wrapper"></div>
         <div class="location__text-content background-very-light-peach flow flex flex--column flex--justify-center">
-            <h2 class="location__heading secondary-heading text-color-peach">Australia</h2>
+            <h2 class="location__heading secondary-heading text-peach">Australia</h2>
             <div class="location__contact-wrapper grid">
                 <div class="location__address-wrapper">
-                    <p class="location__address font-size-100 text-color-dark-grey text-bold">Designo AU Office</p>
-                    <p class="location__address font-size-100 text-color-dark-grey">19 Balonne Street</p>
-                    <p class="location__address font-size-100 text-color-dark-grey">New South Wales 2443</p>
+                    <p class="location__address font-size-100 text-dark-grey text-bold">Designo AU Office</p>
+                    <p class="location__address font-size-100 text-dark-grey">19 Balonne Street</p>
+                    <p class="location__address font-size-100 text-dark-grey">New South Wales 2443</p>
                 </div>
 
                 <div class="location__contact-box">
-                    <p class="location__contact-heading font-size-100 text-color-dark-grey text-bold">Contact</p>
-                    <a class="location__contact-link font-size-100 text-color-dark-grey text-decoration-none"
+                    <p class="location__contact-heading font-size-100 text-dark-grey text-bold">Contact</p>
+                    <a class="location__contact-link font-size-100 text-dark-grey text-decoration-none"
                        href="tel:(02) 6720 9092">P : (02) 6720 9092</a>
-                    <a class="location__contact-link font-size-100 text-color-dark-grey text-decoration-none"
+                    <a class="location__contact-link font-size-100 text-dark-grey text-decoration-none"
                        href="contact@designo.au">M : contact@designo.au</a>
                 </div>
             </div>
@@ -82,19 +86,19 @@
 
     <div class="location location--uk container grid">
         <div class="location__text-content background-very-light-peach flow flex flex--column flex--justify-center">
-            <h2 class="location__heading secondary-heading text-color-peach">United Kingdom</h2>
+            <h2 class="location__heading secondary-heading text-peach">United Kingdom</h2>
             <div class="location__contact-wrapper grid">
                 <div class="location__address-wrapper">
-                    <p class="location__address font-size-100 text-color-dark-grey text-bold">Designo UK Office</p>
-                    <p class="location__address font-size-100 text-color-dark-grey">13 Colorado Way</p>
-                    <p class="location__address font-size-100 text-color-dark-grey">Rhyd-y-fro SA8 9GA</p>
+                    <p class="location__address font-size-100 text-dark-grey text-bold">Designo UK Office</p>
+                    <p class="location__address font-size-100 text-dark-grey">13 Colorado Way</p>
+                    <p class="location__address font-size-100 text-dark-grey">Rhyd-y-fro SA8 9GA</p>
                 </div>
 
                 <div class="location__contact-box">
-                    <p class="location__contact-heading font-size-100 text-color-dark-grey text-bold">Contact </p>
-                    <a class="location__contact-link font-size-100 text-color-dark-grey text-decoration-none"
+                    <p class="location__contact-heading font-size-100 text-dark-grey text-bold">Contact </p>
+                    <a class="location__contact-link font-size-100 text-dark-grey text-decoration-none"
                        href="tel: 078 3115 1400">P : 078 3115 1400</a>
-                    <a class="location__contact-link font-size-100 text-color-dark-grey text-decoration-none"
+                    <a class="location__contact-link font-size-100 text-dark-grey text-decoration-none"
                        href="contact@designo.uk">M : contact@designo.uk</a>
                 </div>
             </div>
@@ -102,22 +106,23 @@
         <div class="location__image-wrapper"></div>
     </div>
 </section>
+</main>
 
 <footer class="footer-section section-padding background-black">
     <section class="footer-contact-section">
         <div class="footer-contact container background-peach grid grid--2-columns">
             <div class="footer-contact__text-content flow">
-                <h2 class="footer-contact__heading secondary-heading text-color-white">
+                <h2 class="footer-contact__heading secondary-heading text-white">
                     Let’s talk about your project
                 </h2>
-                <p class="footer-contact__text font-size-100 text-color-white">
+                <p class="footer-contact__text font-size-100 text-white">
                     Ready to take it to the next level? Contact us today and find out how our expertise can help your
                     business grow.
                 </p>
             </div>
             <div class="footer-contact__button-wrapper grid">
                 <a href="contact.html"
-                   class="footer-contact__btn btn btn--light text-color-dark-grey text-decoration-none uppercase">
+                   class="footer-contact__btn btn btn--light text-dark-grey text-decoration-none uppercase">
                     Get in Touch
                 </a>
             </div>

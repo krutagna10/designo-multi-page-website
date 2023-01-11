@@ -19,139 +19,151 @@
 <body class="contact-page">
 
 <header class="header-section">
+    <a class="skip-to-content" href="#main">Skip to content</a>
     <div class="header container flex flex--justify-space flex--align-center">
         <a href="../index.html" class="header__logo-wrapper">
             <img src="/images/shared/desktop/logo-dark.png" class="header__logo" alt="Designo">
         </a>
-        <nav class="header__nav">
-            <ul class="header__nav-list flex">
+        <nav class="header__nav" aria-label="primary-navigation">
+            <ul id="header__nav-list" class="header__nav-list flex" data-visible="false">
                 <li><a href="about.html" class="header__nav-link">Our Content</a></li>
                 <li><a href="locations.html" class="header__nav-link">Locations</a></li>
                 <li><a href="contact.html" class="header__nav-link">Contact</a></li>
             </ul>
         </nav>
-        <button class="header__mobile-nav-toggle"></button>
+        <button class="header__mobile-nav-toggle" aria-controls="header__nav-list" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+        </button>
     </div>
 </header>
 
-<section class="contact-section hero-section">
-    <div class="contact container grid grid--2-columns background-peach">
-        <div class="contact__text-content flow flex flex--column flex--justify-center">
-            <h1 class="contact__heading primary-heading text-color-white">
-                Contact us
-            </h1>
-            <p class="contact__text font-size-100 text-color-white">
-                Ready to take it to the next level? Let’s talk about your project or idea and find out how we can help
-                your business grow. If you are looking for unique digital experiences that’s relatable to your users,
-                drop us a line.
-            </p>
-        </div>
+<main id="main">
+    <section class="contact-section hero-section">
+        <div class="contact container grid grid--2-columns background-peach">
+            <div class="contact__text-content flow flex flex--column flex--justify-center">
+                <h1 class="contact__heading primary-heading text-white">
+                    Contact us
+                </h1>
+                <p class="contact__text font-size-100 text-white">
+                    Ready to take it to the next level? Let’s talk about your project or idea and find out how we can
+                    help
+                    your business grow. If you are looking for unique digital experiences that’s relatable to your
+                    users,
+                    drop us a line.
+                </p>
+            </div>
 
-        <div class="contact__form-wrapper">
-            <form action="#" class="contact__form flow grid">
-                <div class="contact__input-wrapper contact__name-wrapper">
-                    <label for="contact__name">
-                        <input type="text" name="contact__name" class="contact__form-input" id="contact__name"
-                               placeholder="Name">
-                    </label>
-                    <div class="contact__error-wrapper flex flex--gap">
-                        <p class="contact__error-message text-color-white">Name can't be empty</p>
-                        <img src="/images/contact/desktop/icon-error.svg" class="contact__error-icon" alt="Error icon">
+            <div class="contact__form-wrapper">
+                <form action="#" class="contact__form flow grid">
+                    <div class="contact__input-wrapper contact__name-wrapper">
+                        <label for="contact__name">
+                            <input type="text" name="contact__name" class="contact__form-input" id="contact__name"
+                                   placeholder="Name">
+                        </label>
+                        <div class="contact__error-wrapper flex flex--gap">
+                            <p class="contact__error-message text-white">Name can't be empty</p>
+                            <img src="/images/contact/desktop/icon-error.svg" class="contact__error-icon"
+                                 alt="Error icon">
+                        </div>
                     </div>
-                </div>
 
-                <div class="contact__input-wrapper contact__email-wrapper">
-                    <label for="contact__email">
-                        <input type="email" name="contact__email" class="contact__form-input" id="contact__email"
-                               placeholder="Email Address">
-                    </label>
-                    <div class="contact__error-wrapper flex flex--gap">
-                        <p class="contact__error-message text-color-white">Enter a valid email</p>
-                        <img src="/images/contact/desktop/icon-error.svg" class="contact__error-icon" alt="Error icon">
+                    <div class="contact__input-wrapper contact__email-wrapper">
+                        <label for="contact__email">
+                            <input type="email" name="contact__email" class="contact__form-input" id="contact__email"
+                                   placeholder="Email Address">
+                        </label>
+                        <div class="contact__error-wrapper flex flex--gap">
+                            <p class="contact__error-message text-white">Enter a valid email</p>
+                            <img src="/images/contact/desktop/icon-error.svg" class="contact__error-icon"
+                                 alt="Error icon">
+                        </div>
                     </div>
-                </div>
 
-                <div class="contact__input-wrapper contact__number-wrapper">
-                    <label for="contact__phone-number">
-                        <input type="number" name="contact__phone-number" class="contact__form-input"
-                               id="contact__phone-number"
-                               placeholder="Phone Number">
-                    </label>
-                    <div class="contact__error-wrapper flex flex--gap">
-                        <p class="contact__error-message contact__error-message--phone text-color-white">Phone number
-                            can't be empty</p>
-                        <img src="/images/contact/desktop/icon-error.svg" class="contact__error-icon" alt="Error icon">
+                    <div class="contact__input-wrapper contact__number-wrapper">
+                        <label for="contact__phone-number">
+                            <input type="number" name="contact__phone-number" class="contact__form-input"
+                                   id="contact__phone-number"
+                                   placeholder="Phone Number">
+                        </label>
+                        <div class="contact__error-wrapper flex flex--gap">
+                            <p class="contact__error-message contact__error-message--phone text-white">Phone
+                                number
+                                can't be empty</p>
+                            <img src="/images/contact/desktop/icon-error.svg" class="contact__error-icon"
+                                 alt="Error icon">
+                        </div>
                     </div>
-                </div>
 
-                <div class="contact__input-wrapper contact__message-wrapper">
-                    <label for="contact__message">
+                    <div class="contact__input-wrapper contact__message-wrapper">
+                        <label for="contact__message">
                     <textarea name="contact__message" id="contact__message" cols="30" rows="5"
                               class="contact__form-input"
                               placeholder="Your Message"></textarea>
-                    </label>
-                    <div class="contact__error-wrapper flex flex--gap">
-                        <p class="contact__error-message text-color-white">Message can't be empty</p>
-                        <img src="/images/contact/desktop/icon-error.svg" class="contact__error-icon" alt="Error icon">
+                        </label>
+                        <div class="contact__error-wrapper flex flex--gap">
+                            <p class="contact__error-message text-white">Message can't be empty</p>
+                            <img src="/images/contact/desktop/icon-error.svg" class="contact__error-icon"
+                                 alt="Error icon">
+                        </div>
                     </div>
+
+                    <button class="contact__submit-btn btn btn--light uppercase letter-spacing-1">
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="locations-section section-padding">
+        <div class="container locations grid">
+            <div class="locations__item flex flex--column flex--align-center">
+                <div class="locations__image-wrapper">
+                    <img src="/images/shared/desktop/illustration-canada.svg" class="locations__image"
+                         alt="Canada illustration">
                 </div>
+                <div class="locations__text-content grid grid--items-center text-align-center">
+                    <h3 class="locations__heading tertiary-heading text-dark-grey uppercase letter-spacing-2">
+                        Canada
+                    </h3>
+                    <a href="locations.html" class="btn btn--dark locations__btn uppercase text-decoration-none">
+                        See Location
+                    </a>
+                </div>
+            </div>
 
-                <button class="contact__submit-btn btn btn--light uppercase letter-spacing-1">
-                    Submit
-                </button>
-            </form>
-        </div>
-    </div>
-</section>
+            <div class="locations__item flex flex--column flex--align-center">
+                <div class="locations__image-wrapper">
+                    <img src="/images/shared/desktop/illustration-australia.svg" class="locations__image"
+                         alt="Australia illustration">
+                </div>
+                <div class="locations__text-content grid grid--items-center text-align-center">
+                    <h3 class="locations__heading tertiary-heading text-dark-grey uppercase letter-spacing-2">
+                        Australia
+                    </h3>
+                    <a href="locations.html" class="btn btn--dark locations__btn uppercase text-decoration-none">
+                        See Location
+                    </a>
+                </div>
+            </div>
 
-<section class="locations-section section-padding">
-    <div class="container locations grid">
-        <div class="locations__item flex flex--column flex--align-center">
-            <div class="locations__image-wrapper">
-                <img src="/images/shared/desktop/illustration-canada.svg" class="locations__image"
-                     alt="Canada illustration">
-            </div>
-            <div class="locations__text-content grid grid--items-center text-align-center">
-                <h3 class="locations__heading tertiary-heading text-color-dark-grey uppercase letter-spacing-2">
-                    Canada
-                </h3>
-                <a href="locations.html" class="btn btn--dark locations__btn uppercase text-decoration-none">
-                    See Location
-                </a>
-            </div>
-        </div>
-
-        <div class="locations__item flex flex--column flex--align-center">
-            <div class="locations__image-wrapper">
-                <img src="/images/shared/desktop/illustration-australia.svg" class="locations__image"
-                     alt="Australia illustration">
-            </div>
-            <div class="locations__text-content grid grid--items-center text-align-center">
-                <h3 class="locations__heading tertiary-heading text-color-dark-grey uppercase letter-spacing-2">
-                    Australia
-                </h3>
-                <a href="locations.html" class="btn btn--dark locations__btn uppercase text-decoration-none">
-                    See Location
-                </a>
-            </div>
-        </div>
-
-        <div class="locations__item flex flex--column flex--align-center">
-            <div class="locations__image-wrapper">
-                <img src="/images/shared/desktop/illustration-united-kingdom.svg" class="locations__image"
-                     alt="United Kingdom illustration">
-            </div>
-            <div class="locations__heading locations__text-content grid grid--items-center text-align-center">
-                <h3 class="tertiary-heading text-color-dark-grey uppercase letter-spacing-2">
-                    United Kingdom
-                </h3>
-                <a href="locations.html" class="btn btn--dark locations__btn uppercase text-decoration-none">
-                    See Location
-                </a>
+            <div class="locations__item flex flex--column flex--align-center">
+                <div class="locations__image-wrapper">
+                    <img src="/images/shared/desktop/illustration-united-kingdom.svg" class="locations__image"
+                         alt="United Kingdom illustration">
+                </div>
+                <div class="locations__heading locations__text-content grid grid--items-center text-align-center">
+                    <h3 class="tertiary-heading text-dark-grey uppercase letter-spacing-2">
+                        United Kingdom
+                    </h3>
+                    <a href="locations.html" class="btn btn--dark locations__btn uppercase text-decoration-none">
+                        See Location
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+</main>
 
 <footer class="footer-section section-padding background-black">
     <div class="footer container">
@@ -160,7 +172,7 @@
         </a>
         <nav class="footer__nav">
             <ul class="footer__nav-list flex flex--column flex--gap">
-                <li><a class="footer__nav-link" href="about.html" >Our company</a></li>
+                <li><a class="footer__nav-link" href="about.html">Our company</a></li>
                 <li><a class="footer__nav-link" href="locations.html">Locations</a></li>
                 <li><a class="footer__nav-link" href="contact.html">Contact</a></li>
             </ul>

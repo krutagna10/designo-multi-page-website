@@ -19,23 +19,26 @@
 
 <header class="header-section">
     <div class="header container flex flex--justify-space flex--align-center">
+        <a class="skip-to-content" href="#main">Skip to content</a>
         <a href="index.html" class="header__logo-wrapper">
             <img src="/images/shared/desktop/logo-dark.png" class="header__logo" alt="Designo">
         </a>
 
-        <nav class="header__nav">
-            <ul class="header__nav-list flex">
+        <nav class="header__nav" aria-label="primary navigation">
+            <ul id="header__nav-list" class="header__nav-list flex" data-visible="false">
                 <li><a href="pages/about.html" class="header__nav-link">Our Content</a></li>
                 <li><a href="pages/locations.html" class="header__nav-link">Locations</a></li>
                 <li><a href="pages/contact.html" class="header__nav-link">Contact</a></li>
             </ul>
         </nav>
 
-        <button class="header__mobile-nav-toggle"></button>
+        <button class="header__mobile-nav-toggle" aria-controls="header__nav-list" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+        </button>
     </div>
 </header>
 
-<main>
+<main id="main">
     <section class="hero-section">
         <div class="hero grid grid--2-columns background-peach">
             <div class="hero__description hero-flow">

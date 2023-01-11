@@ -1,19 +1,28 @@
 'use strict';
 
-const header = document.querySelector('.header-section')
+const navList = document.querySelector('.header__nav-list');
+const navToggle = document.querySelector('.header__mobile-nav-toggle');
 const overlay = document.querySelector('.overlay');
-const mobileNavToggle = document.querySelector('.header__mobile-nav-toggle');
 
 // Function for hiding navigation
 const hideMobileNavigation = () => {
+    navList.setAttribute('data-visible', 'false');
+    navToggle.setAttribute('aria-expanded', 'false');
     overlay.classList.add('hidden');
-    header.classList.remove('navigation-open');
 }
 
 // When the user clicks on mobile navigation button
-mobileNavToggle.addEventListener('click', () => {
-    header.classList.toggle('navigation-open');
-    overlay.classList.toggle('hidden');
+navToggle.addEventListener('click', () => {
+    const visibility = navList.getAttribute('data-visible');
+    if (visibility === 'false') {
+        navList.setAttribute('data-visible', 'true');
+        navToggle.setAttribute('aria-expanded', 'true');
+        overlay.classList.remove('hidden');
+    } else {
+        navList.setAttribute('data-visible', 'false');
+        navToggle.setAttribute('aria-expanded', 'false');
+        overlay.classList.add('hidden');
+    }
 })
 
 // When the user click on escape key
